@@ -1,0 +1,135 @@
+---
+import Base from "../layouts/Base.astro";
+import RoundBanner from "../components/RoundBanner.astro";
+import { byProduct, criteriaCount, sheets } from "../data/sheets";
+import { source } from "../data/site";
+
+const groups = byProduct();
+const bands = [
+  { star: 5, range: "90–100 điểm", who: "Bộ Nông nghiệp và Môi trường công nhận" },
+  { star: 4, range: "70 đến dưới 90", who: "UBND tỉnh công nhận" },
+  { star: 3, range: "50 đến dưới 70", who: "UBND tỉnh công nhận" },
+  { star: 2, range: "30 đến dưới 50", who: "Không cấp giấy chứng nhận" },
+  { star: 1, range: "dưới 30", who: "Không cấp giấy chứng nhận" },
+];
+---
+
+<Base
+  title="Chấm OCOP · Tự chấm điểm sản phẩm OCOP theo bộ tiêu chí 2026"
+  description="Chọn loại sản phẩm, đánh dấu những gì cơ sở đang có. Biết ngay sản phẩm được bao nhiêu điểm, mấy sao OCOP, còn thiếu tiêu chí nào. Theo Quyết định 26/2026/QĐ-TTg. Miễn phí, không cần đăng ký."
+>
+  <section class="page pt-12 pb-10 sm:pt-16">
+    <div class="max-w-[820px]">
+      <h1 class="h1 m-0">Sản phẩm của anh chị đang được mấy sao OCOP?</h1>
+      <p class="lede mt-5 max-w-[64ch]">
+        Chọn loại sản phẩm, đánh dấu những gì cơ sở đang có. Công cụ cộng điểm đúng theo phiếu chấm của bộ tiêu chí
+        OCOP mới ({source.doc}), rồi chỉ ra tiêu chí còn thiếu và việc cần làm để lên hạng.
+      </p>
+      <ul class="mt-6 flex flex-wrap gap-x-6 gap-y-2 list-none p-0 text-[15px] text-ink-soft">
+        <li>✓ Miễn phí, không cần đăng ký</li>
+        <li>✓ Dữ liệu chỉ nằm trên máy anh chị</li>
+        <li>✓ Mỗi tiêu chí ghi rõ trang văn bản gốc</li>
+      </ul>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#chon-san-pham" class="btn btn-primary">Bắt đầu chấm điểm</a>
+        <a href="/han-giay-chung-nhan/" class="btn btn-ghost">Tính hạn giấy chứng nhận</a>
+      </div>
+    </div>
+    <div class="mt-10 max-w-[820px]"><RoundBanner /></div>
+  </section>
+
+  <section class="bg-bg-warm border-y border-line">
+    <ol class="page py-10 grid gap-6 md:grid-cols-3 list-none my-0">
+      <li>
+        <p class="m-0 text-signal font-bold text-[28px]">1</p>
+        <p class="m-0 mt-1 font-bold text-[18px]">Chọn loại sản phẩm</p>
+        <p class="m-0 mt-1 text-ink-soft">{sheets.length} bộ phiếu chấm, từ chè, gạo, mật ong đến du lịch cộng đồng.</p>
+      </li>
+      <li>
+        <p class="m-0 text-signal font-bold text-[28px]">2</p>
+        <p class="m-0 mt-1 font-bold text-[18px]">Đánh dấu từng tiêu chí</p>
+        <p class="m-0 mt-1 text-ink-soft">
+          Khoảng 30–40 câu, mỗi câu chọn một mức đúng với cơ sở. Mất chừng 10 phút.
+        </p>
+      </li>
+      <li>
+        <p class="m-0 text-signal font-bold text-[28px]">3</p>
+        <p class="m-0 mt-1 font-bold text-[18px]">Xem kết quả</p>
+        <p class="m-0 mt-1 text-ink-soft">
+          Tổng điểm, số sao, tiêu chí bắt buộc còn thiếu, và chỗ nâng điểm dễ nhất. In ra hoặc gửi link cho người tư vấn.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="chon-san-pham" class="page pt-14">
+    <h2 class="h2 m-0">Chọn loại sản phẩm</h2>
+    <p class="mt-3 text-ink-soft max-w-[70ch]">
+      Mỗi loại có phiếu chấm riêng trong Phụ lục II của {source.doc}. Không chắc sản phẩm thuộc loại nào thì xem Phụ lục I
+      ở <a href="/nguon/">trang nguồn</a>.
+    </p>
+    <div class="mt-8 grid gap-10">
+      {
+        groups.map((g) => (
+          <div>
+            <h3 class="m-0 text-[13px] uppercase tracking-[0.08em] text-muted font-bold">{g.product}</h3>
+            <ul class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 list-none p-0 m-0">
+              {g.sheets.map((s) => (
+                <li>
+                  <a
+                    href={`/cham/${s.slug}/`}
+                    class="card flex h-full items-start justify-between gap-3 p-4 no-underline text-ink hover:border-ink hover:bg-bg-warm"
+                  >
+                    <span>
+                      <span class="block font-bold leading-snug">{s.name}</span>
+                    </span>
+                    <span class="text-[13px] text-muted whitespace-nowrap">{criteriaCount(s)} tiêu chí</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="page pt-16">
+    <h2 class="h2 m-0">Điểm bao nhiêu thì được mấy sao</h2>
+    <div class="mt-6 grid gap-8 lg:grid-cols-[1fr_1fr]">
+      <table class="w-full border-collapse text-[15px]">
+        <caption class="sr-only">Hạng sao theo tổng điểm</caption>
+        <thead>
+          <tr class="text-left text-muted text-[13px] uppercase tracking-[0.06em]">
+            <th class="py-2 pr-3 font-bold">Hạng</th>
+            <th class="py-2 pr-3 font-bold">Tổng điểm</th>
+            <th class="py-2 font-bold">Ai công nhận</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            bands.map((b) => (
+              <tr class="border-t border-line">
+                <td class="py-2.5 pr-3 font-bold whitespace-nowrap">{b.star} sao</td>
+                <td class="py-2.5 pr-3">{b.range}</td>
+                <td class="py-2.5 text-ink-soft">{b.who}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+      <div class="text-ink-soft">
+        <p class="m-0">
+          <strong class="text-ink">Đủ điểm chưa chắc đủ sao.</strong> Trong phiếu chấm, một số mức có dấu sao: *** là yêu cầu
+          tối thiểu của hạng 3 sao, **** của 4 sao, ***** của 5 sao. Thiếu một mức bắt buộc thì sản phẩm dừng ở hạng thấp
+          hơn, dù tổng điểm cao. Công cụ này kiểm tra cả hai.
+        </p>
+        <p class="mt-4">
+          Giấy chứng nhận 3 sao trở lên có giá trị 36 tháng. Muốn giữ hạng, chủ thể nộp hồ sơ đánh giá lại trong khoảng 180
+          đến 120 ngày trước khi hết hạn. <a href="/han-giay-chung-nhan/">Tính ngày cho giấy của anh chị</a>.
+        </p>
+        <p class="mt-4 text-[14px]">Điều 3 khoản 3, Điều 4 khoản 3, Điều 7 khoản 6, {source.doc}.</p>
+      </div>
+    </div>
+  </section>
+</Base>

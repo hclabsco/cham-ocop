@@ -1,0 +1,98 @@
+---
+import Base from "../layouts/Base.astro";
+import { byProduct } from "../data/sheets";
+import { contact, source, verifiedThrough } from "../data/site";
+import { formatDate } from "../lib/format";
+
+const groups = byProduct();
+---
+
+<Base
+  title="Nguồn và cách tính · Chấm OCOP"
+  description="Chấm OCOP tính theo Quyết định 26/2026/QĐ-TTg. Văn bản gốc, mã kiểm tra sha256, cách chép phiếu chấm và cách xếp hạng sao."
+>
+  <section class="page pt-12 max-w-[860px]">
+    <h1 class="h1 m-0">Nguồn và cách tính</h1>
+    <p class="lede mt-5">
+      Mọi con số trên trang này lấy từ một văn bản: {source.doc} ngày {formatDate(source.issuedOn)}, {source.title.toLowerCase()}.
+      Đã đối chiếu đến ngày {formatDate(verifiedThrough)}.
+    </p>
+
+    <h2 class="h2 mt-12 mb-0">Văn bản gốc</h2>
+    <dl class="mt-4 grid gap-3 m-0">
+      <div class="grid sm:grid-cols-[200px_1fr] gap-1">
+        <dt class="font-bold">Văn bản</dt>
+        <dd class="m-0">{source.doc}, {source.signer} ký, hiệu lực từ {formatDate(source.effectiveOn)}</dd>
+      </div>
+      <div class="grid sm:grid-cols-[200px_1fr] gap-1">
+        <dt class="font-bold">Thay thế</dt>
+        <dd class="m-0">{source.replaces}, hết hiệu lực sau 60 ngày kể từ 22/5/2026 (Điều 11 khoản 2)</dd>
+      </div>
+      <div class="grid sm:grid-cols-[200px_1fr] gap-1">
+        <dt class="font-bold">Bản chính thức</dt>
+        <dd class="m-0">
+          <a href={source.officialPage} rel="noopener">Cổng văn bản Chính phủ</a> · <a href={`/nguon/${source.file}`}>bản lưu tại đây (PDF, 6,8 MB)</a>
+        </dd>
+      </div>
+      <div class="grid sm:grid-cols-[200px_1fr] gap-1">
+        <dt class="font-bold">sha256</dt>
+        <dd class="m-0 font-mono text-[13px] break-all">{source.sha256}</dd>
+      </div>
+    </dl>
+    <p class="mt-4 text-ink-soft">
+      Bản lưu tải từ <span class="break-all">{source.officialFile}</span>. Anh chị tải bản chính thức về, tính sha256, nếu trùng
+      với dãy trên thì hai file giống hệt nhau.
+    </p>
+
+    <h2 class="h2 mt-12 mb-0">Cách chúng tôi chép phiếu chấm</h2>
+    <ol class="mt-4 grid gap-3 pl-5 text-ink-soft">
+      <li>Bản PDF là ảnh scan, không có lớp chữ. Hai lượt chép độc lập đọc từng trang của Phụ lục II (26 bộ phiếu, trang 18–146).</li>
+      <li>Máy so hai bản: điểm, dấu sao, điểm tối đa và số mức của mọi tiêu chí trùng nhau ở cả 26 bộ. Những chỗ lệch câu chữ được đọc lại trên ảnh phóng to để chọn đúng chữ in.</li>
+      <li>
+        Mỗi lần build, bộ kiểm thử bắt: điểm cao nhất của các mức bằng điểm tối đa của tiêu chí, các tiêu chí cộng đúng điểm của mục,
+        các mục cộng đúng điểm của phần, ba phần cộng đúng 100.
+      </li>
+      <li>Câu chữ giữ nguyên như bản in, kể cả lỗi in rõ ràng trong văn bản gốc.</li>
+    </ol>
+
+    <h2 class="h2 mt-12 mb-0">Cách xếp hạng</h2>
+    <ul class="mt-4 grid gap-3 pl-5 text-ink-soft">
+      <li>Tổng điểm tối đa 100: Phần A sản phẩm và sức mạnh cộng đồng 40 điểm, Phần B khả năng tiếp thị 25 điểm, Phần C chất lượng sản phẩm 35 điểm (Điều 3 khoản 1).</li>
+      <li>5 sao từ 90 điểm, 4 sao từ 70 đến dưới 90, 3 sao từ 50 đến dưới 70, 2 sao từ 30 đến dưới 50, 1 sao dưới 30 (Điều 3 khoản 3).</li>
+      <li>
+        Mức có dấu *** là yêu cầu tối thiểu của 3 sao, **** của 4 sao, ***** của 5 sao (ghi chú cuối mỗi phiếu chấm). Công cụ coi yêu cầu
+        là cộng dồn: muốn 4 sao phải đạt cả các mức *** và ****. Chọn mức cao hơn mức có dấu sao vẫn tính là đạt.
+      </li>
+      <li>Tiêu chí chưa chọn được tính 0 điểm.</li>
+      <li>
+        Hội đồng chấm theo hồ sơ, mẫu sản phẩm và kiểm tra thực tế; điểm của các thành viên được lấy trung bình. Nhiều tiêu chí cảm quan
+        (màu, mùi vị, độ độc đáo) do Hội đồng đánh giá, nên điểm tự chấm chỉ là ước tính.
+      </li>
+    </ul>
+
+    <h2 class="h2 mt-12 mb-0">26 bộ phiếu chấm</h2>
+    <div class="mt-4 grid gap-6">
+      {
+        groups.map((g) => (
+          <div>
+            <h3 class="m-0 text-[13px] uppercase tracking-[0.08em] text-muted font-bold">{g.product}</h3>
+            <ul class="mt-2 grid gap-1 pl-5 m-0">
+              {g.sheets.map((s) => (
+                <li>
+                  <a href={`/cham/${s.slug}/`}>{s.no}. {s.name}</a>
+                  <span class="text-muted"> · trang <a href={`/nguon/${source.file}#page=${s.pdfPages[0]}`}>{s.pdfPages[0]}–{s.pdfPages[1]}</a></span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+
+    <h2 class="h2 mt-12 mb-0">Báo sai</h2>
+    <p class="mt-4 text-ink-soft">
+      Thấy chỗ nào khác văn bản, anh chị <a href={contact.zaloOaUrl} rel="noopener">nhắn Zalo HC Labs</a> hoặc mở issue tại
+      <a href={contact.repo} rel="noopener">GitHub</a>, ghi số bộ, mã tiêu chí và trang PDF. Mã nguồn công khai theo giấy phép MIT.
+    </p>
+  </section>
+</Base>

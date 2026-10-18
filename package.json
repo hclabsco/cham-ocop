@@ -1,0 +1,32 @@
+{
+  "name": "cham-ocop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tự chấm điểm sản phẩm OCOP theo Quyết định 26/2026/QĐ-TTg, mỗi tiêu chí trỏ về trang văn bản gốc",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.3.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "postbuild": "node scripts/check-dist.mjs",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "astro": "^6.2.1",
+    "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.0",
+    "wrangler": "^4.91.0"
+  }
+}

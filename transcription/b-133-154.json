@@ -1,0 +1,2448 @@
+{
+  "pass": "b",
+  "pageRange": [
+    133,
+    154
+  ],
+  "sets": [
+    {
+      "no": 24,
+      "name": "Cây cảnh",
+      "product": "Sinh vật cảnh",
+      "group": null,
+      "pdfPages": [
+        133,
+        137
+      ],
+      "disqualifiedWhen": "Giả mạo hồ sơ hoặc không đáp ứng quy định Hồ sơ đăng ký theo quy định",
+      "parts": [
+        {
+          "code": "A",
+          "title": "SẢN PHẨM VÀ SỨC MẠNH CỦA CỘNG ĐỒNG",
+          "max": 40,
+          "sections": [
+            {
+              "code": "1",
+              "title": "TỔ CHỨC SẢN XUẤT",
+              "max": 19,
+              "criteria": [
+                {
+                  "code": "1.1",
+                  "title": "Nguồn gốc sản phẩm",
+                  "max": 4,
+                  "notes": [
+                    "Yêu cầu: 100% sản phẩm được trồng trên địa bàn cấp tỉnh"
+                  ],
+                  "options": [
+                    {
+                      "text": "Có sản phẩm được trồng trên địa bàn cấp xã, nhưng tỷ lệ dưới 50%",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm được trồng trên địa bàn cấp xã từ 50% đến dưới 75%",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm được trồng trên địa bàn cấp xã từ 75% đến 100%",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.2",
+                  "title": "Gia tăng giá trị",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Trồng, chăm sóc đơn giản",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Trồng, chăm sóc, cắt tỉa",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Trồng, chăm sóc, cắt tỉa, tạo dáng kỹ thuật tay nghề cao",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.3",
+                  "title": "Năng lực sản xuất để đáp ứng yêu cầu phân phối",
+                  "max": 3,
+                  "notes": [
+                    "(Khả năng sản xuất đáp ứng nhu cầu về số lượng/quy mô của thị trường, so sánh với quy mô trung bình ở cùng đối tượng sản xuất tại địaphương về sản lượng hoặc giá trị sản xuất)"
+                  ],
+                  "options": [
+                    {
+                      "text": "Có năng lực, quy mô sản xuất mức độ nhỏ",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có năng lực, quy mô sản xuất trung bình",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có năng lực, quy mô sản xuất lớn",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.4",
+                  "title": "Liên kết chuỗi trong sản xuất",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không có liên kết hoặc có liên kết nhưng không rõ ràng",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có hợp đồng liên kết từ 50% đến dưới 75% sản lượng tiêu thụ",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có hợp đồng liên kết trên 75% sản lượng tiêu thụ",
+                      "points": 2,
+                      "star": 4
+                    },
+                    {
+                      "text": "Có hợp đồng liên kết trên 75% sản lượng tiêu thụ và tổ chức thực hiện hợp đồng ổn định từ 12 tháng trở lên tính đến thời điểm đăng ký đánh giá, phân hạng OCOP",
+                      "points": 4,
+                      "star": 5
+                    }
+                  ]
+                },
+                {
+                  "code": "1.5",
+                  "title": "Bảo vệ môi trường trong quá trình sản xuất",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có Hồ sơ, thủ tục về môi trường theo quy định của pháp luật và các quy định khác về bảo vệ môi trường",
+                      "points": 1,
+                      "star": 4
+                    },
+                    {
+                      "text": "Có Hồ sơ, thủ tục về môi trường theo quy định của pháp luật về bảo vệ môi trường và hồ sơ minh chứng về công trình thu gom và xử lý chất thải theo quy định",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có Hồ sơ, thủ tục về môi trường theo quy định của pháp luật về bảo vệ môi trường; hồ sơ minh chứng về công trình thu gom và xử lý chất thải theo quy định và hồ sơ minh chứng về sử dụng bao gói thân thiện với môi trường",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.6",
+                  "title": "Sử dụng công nghệ theo hướng bền vững trong sản xuất",
+                  "max": 1,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không sử dụng công nghệ theo hướng bền vững trong sản xuất",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có áp dụng công nghệ theo hướng bền vững môi trường (công nghệ tiết kiệm nguyên liệu, nhiên liệu; hoạt động xử lý/tái chế chất thải; tận thu tái sử dụng, tái chế phụ phẩm nông nghiệp,...)",
+                      "points": 1,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "2",
+              "title": "PHÁT TRIỂN SẢN PHẨM",
+              "max": 9,
+              "criteria": [
+                {
+                  "code": "2.1",
+                  "title": "Nguồn gốc ý tưởng sản phẩm",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Sản phẩm được sản xuất phổ biến ở nhiều tỉnh, thành phố",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm được sản xuất phổ biến ở nhiều tỉnh, thành phố nhưng có chất lượng nổi trội, khác biệt do điều kiện về nguyên liệu, kỹ thuật truyền thống",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm được sản xuất ở nhiều nơi trên địa bàn, là sản phẩm đặc trưng của tỉnh, có chất lượng nổi trội/sản phẩm mới được chế biến từ nguyên liệu đặc trưng của địa phương",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm là đặc sản, truyền thống, chỉ sản xuất trên địa bàn của xã, có chất lượng đặc sắc, thương mại gắn với chỉ dẫn nguồn gốc địa lý hoặc sản phẩm mới được chế biến từ nguyên liệu đặc trưng của địa phương, được thương mại ổn định ít nhất 36 tháng",
+                      "points": 5,
+                      "star": 4
+                    }
+                  ]
+                },
+                {
+                  "code": "2.2",
+                  "title": "Phong cách, ghi nhãn sản phẩm (tem, nhãn gắn trên sản phẩm)",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Thông tin/thuyết minh về sản phẩm đầy đủ",
+                      "points": 1,
+                      "star": 3
+                    },
+                    {
+                      "text": "Thông tin/thuyết minh đầy đủ, thể hiện được thông điệp câu chuyện sản phẩm (hình ảnh hoặc lời giới thiệu)",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Thông tin/thuyết minh đầy đủ, ấn tượng, thể hiện được thông điệp câu chuyện sản phẩm (hình ảnh hoặc lời giới thiệu), có mã truy xuất nguồn gốc điện tử",
+                      "points": 4,
+                      "star": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "3",
+              "title": "SỨC MẠNH CỘNG ĐỒNG",
+              "max": 12,
+              "criteria": [
+                {
+                  "code": "3.1",
+                  "title": "Loại hình tổ chức sản xuất - kinh doanh",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Hộ sản xuất/hộ gia đình có đăng ký kinh doanh; hoặc trang trại; hoặc tổ hợp tác (có giấy đăng ký kinh doanh theo quy định)",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Công ty TNHH; hoặc doanh nghiệp tư nhân; hoặc công ty cổ phần có vốn góp của cộng đồng người địa phương <51%",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "HTX tổ chức, hoạt động theo đúng quy định của pháp luật; hoặc công ty cổ phần có vốn góp của cộng đồng người địa phương ≥ 51%",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "3.2",
+                  "title": "Đại diện pháp luật của chủ thể là nữ; hoặc đồng bào dân tộc thiểu số; hoặc người khuyết tật",
+                  "max": 1,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Đại diện pháp luật của chủ thể không phải nữ, không phải là đồng bào dân tộc thiểu số, không phải là người khuyết tật",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Đại diện pháp luật của chủ thể là nữ; hoặc là đồng bào dân tộc thiểu số; hoặc là người khuyết tật",
+                      "points": 1,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "3.3",
+                  "title": "Sử dụng lao động địa phương",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có sử dụng từ 25% đến dưới 50% lao động là người trên địa bàn cấp xã",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có sử dụng từ 50% đến 75% lao động là người trên địa bàn cấp xã",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có sử dụng ≥ 75% lao động là người trên địa bàn cấp xã",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "3.4",
+                  "title": "Tăng trưởng sản xuất kinh doanh",
+                  "max": 2,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Hợp tác xã xếp loại trung bình hoặc năm trước liền kề năm đánh giá có lợi nhuận cao hơn so với năm trước liền kề; các loại hình khác: Năm trước liền kề năm đánh giá có lợi nhuận cao hơn so với năm trước liền kề.",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Hợp tác xã xếp loại khá trở lên hoặc có 02 năm liên tiếp tăng trưởng dương về lợi nhuận tính từ năm trước liền kề năm đánh giá; các loại hình khác: Có 02 năm liên tiếp tăng trưởng dương về lợi nhuận tính từ năm trước liền kề năm đánh giá",
+                      "points": 2,
+                      "star": 4
+                    }
+                  ]
+                },
+                {
+                  "code": "3.5",
+                  "title": "Sở hữu trí tuệ",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Đơn đăng ký nhãn hiệu đã được cơ quan có thẩm quyền chấp nhận hoặc công bố (đã qua vòng thẩm định hình thức)",
+                      "points": 1,
+                      "star": 3
+                    },
+                    {
+                      "text": "Các nhãn hiệu sử dụng trên bao bì, nhãn của sản phẩm được cấp Giấy chứng nhận đăng ký nhãn hiệu và sản phẩm có sử dụng dấu hiệu chỉ dẫn nguồn gốc địa lý gắn với cộng đồng địa phương (trường hợp sản phẩm đã được nhà nước bảo hộ chỉ dẫn địa lý, nhãn hiệu tập thể, nhãn hiệu chứng nhận thì phải có văn bản ghi nhận quyền sử dụng)",
+                      "points": 2,
+                      "star": 4
+                    },
+                    {
+                      "text": "Các nhãn hiệu sử dụng trên bao bì, nhãn của sản phẩm được cấp Giấy chứng nhận đăng ký nhãn hiệu và sản phẩm có sử dụng dấu hiệu chỉ dẫn nguồn gốc địa lý gắn với cộng đồng địa phương (trường hợp sản phẩm đã được nhà nước bảo hộ chỉ dẫn địa lý, nhãn hiệu tập thể, nhãn hiệu chứng nhận thì phải có văn bản ghi nhận quyền sử dụng) và có Bằng độc quyền kiểu dáng công nghiệp, hoặc Bằng sáng chế, hoặc Bằng độc quyền giải pháp hữu ích, hoặc Giấy chứng nhận đăng ký quyền tác giả (trừ Giấy chứng nhận đăng ký quyền tác giả đối với nhãn hiệu).",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "title": "KHẢ NĂNG TIẾP THỊ",
+          "max": 25,
+          "sections": [
+            {
+              "code": "4",
+              "title": "TIẾP THỊ",
+              "max": 13,
+              "criteria": [
+                {
+                  "code": "4.1",
+                  "title": "Khu vực phân phối chính",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Thị trường trong địa bàn cấp xã",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Thị trường ngoài thị trường cấp xã",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Thị trường trong địa bàn cấp tỉnh",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Thị trường ngoài địa bàn cấp tỉnh",
+                      "points": 4,
+                      "star": null
+                    },
+                    {
+                      "text": "Thị trường quốc tế (có hợp đồng và minh chứng thực hiện hợp đồng)",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "4.2",
+                  "title": "Tổ chức phân phối",
+                  "max": 3,
+                  "notes": [
+                    "(Gồm: Tổ chức kinh doanh, phân phối sản phẩm)"
+                  ],
+                  "options": [
+                    {
+                      "text": "Không có người chịu trách nhiệm quản lý phân phối",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có người chịu trách nhiệm quản lý phân phối",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có bộ phận/phòng quản lý phân phối",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có bộ phận/phòng quản lý phân phối, có ứng dụng công nghệ thông tin trong quản lý",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "4.3",
+                  "title": "Quảng bá sản phẩm",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không có hoạt động quảng bá sản phẩm",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có 03 hoạt động quảng bá sản phẩm trở xuống",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có nhiều hơn 03 hoạt động quảng bá sản phẩm, có website của cơ sở (hoặc quảng bá trên mạng xã hội) và có tham gia hoạt động xúc tiến thương mại, hội chợ, triển lãm trong tỉnh",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có nhiều hơn 03 hoạt động quảng bá sản phẩm, có website của cơ sở (hoặc quảng bá trên mạng xã hội) và có tham gia hoạt động xúc tiến thương mại, hội chợ, triển lãm ngoài tỉnh",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có nhiều hơn 03 hoạt động quảng bá sản phẩm và có website của cơ sở (hoặc quảng bá trên mạng xã hội hoạt động thường xuyên) và có tham gia hoạt động xúc tiến thương mại, hội chợ, triển lãm ngoài tỉnh và quốc tế",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "5",
+              "title": "CÂU CHUYỆN SẢN PHẨM",
+              "max": 12,
+              "criteria": [
+                {
+                  "code": "5.1",
+                  "title": "Câu chuyện sản phẩm",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không có câu chuyện sản phẩm",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện sản phẩm",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện sản phẩm được tư liệu hóa và thể hiện trên tờ rơi",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện sản phẩm được tư liệu hóa, thể hiện trên tờ rơi và website (dưới dạng hình ảnh, clip,...)",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện sản phẩm được tư liệu hóa, thể hiện trên tờ rơi, website (dưới dạng hình ảnh, clip,...) và đưa vào nội dung truy xuất nguồn gốc điện tử",
+                      "points": 5,
+                      "star": 4
+                    }
+                  ]
+                },
+                {
+                  "code": "5.2",
+                  "title": "Cấu trúc câu chuyện sản phẩm",
+                  "max": 2,
+                  "notes": [
+                    "Chỉ áp dụng khi có câu chuyện sản phẩm"
+                  ],
+                  "options": [
+                    {
+                      "text": "Đơn giản",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Ngắn gọn, xúc tích",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Ngắn gọn, xúc tích và có văn phong kể chuyện",
+                      "points": 2,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "5.3",
+                  "title": "Trí tuệ/bản sắc địa phương",
+                  "max": 5,
+                  "notes": [
+                    "Yêu cầu: Nội dung câu chuyện sản phẩm OCOP phải thể hiện rõ nguồn gốc, tài nguyên bản địa, văn hóa, bản sắc địa phương, giá trị đặc trưng của sản phẩm, có tính truyền cảm và thuyết phục."
+                  ],
+                  "options": [
+                    {
+                      "text": "Giống với câu chuyện sản phẩm của chủ thể khác, hoặc sản phẩm khác của cùng chủ thể",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện riêng, gắn với nguồn gốc xuất xứ sản phẩm",
+                      "points": 1,
+                      "star": 3
+                    },
+                    {
+                      "text": "Nội dung câu chuyện mang sắc thái truyền thống, văn hóa địa phương và giá trị đặc trưng của sản phẩm",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Nội dung câu chuyện mang sắc thái truyền thống, văn hóa địa phương, giá trị đặc trưng của sản phẩm, có tính truyền cảm và thuyết phục",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "title": "CHẤT LƯỢNG SẢN PHẨM",
+          "max": 35,
+          "sections": [
+            {
+              "code": "6",
+              "title": "CHẤT LƯỢNG SẢN PHẨM",
+              "max": 17,
+              "criteria": [
+                {
+                  "code": "6.1",
+                  "title": "Hình dáng so với loại sản phẩm",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Trung bình",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Đẹp, ấn tượng",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Rất đẹp và ấn tượng",
+                      "points": 5,
+                      "star": 5
+                    }
+                  ]
+                },
+                {
+                  "code": "6.2",
+                  "title": "Màu sắc",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Phù hợp với đặc tính sản phẩm",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Đẹp, bắt mắt so với đặc tính sản phẩm",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Rất đẹp, bắt mắt và ấn tượng so với đặc tính sản phẩm",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "6.3",
+                  "title": "Kiểu dáng, tạo hình, mỹ thuật",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Tạo hình, kiểu dáng trung bình",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Tạo hình, kiểu dáng khéo léo/đẹp mắt",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Tạo hình, kiểu dáng khéo léo, có giá trị mỹ thuật, kỹ thuật",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Tạo hình tinh xảo, có giá trị mỹ thuật, kỹ thuật, thể hiện thông điệp truyền tải",
+                      "points": 5,
+                      "star": 5
+                    }
+                  ]
+                },
+                {
+                  "code": "6.4",
+                  "title": "Thiết kế sản phẩm (chậu trồng, phụ kiện kèm theo...)",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Thiết kế sản phẩm đơn giản, phổ biến",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Thiết kế đẹp, phù hợp với sản phẩm",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Thiết kế ấn tượng, sử dụng vật liệu thân thiện môi trường",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "7",
+              "title": "TÍNH ĐỘC ĐÁO",
+              "max": 9,
+              "criteria": [
+                {
+                  "code": "7",
+                  "title": "TÍNH ĐỘC ĐÁO",
+                  "max": 9,
+                  "notes": [
+                    "Chất lượng: Có nét riêng, khác biệt, có dấu hiệu nhận biết rõ ràng so với sản phẩm khác, tiềm năng thành thương hiệu của địa phương"
+                  ],
+                  "options": [
+                    {
+                      "text": "Trung bình",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Tương đối độc đáo",
+                      "points": 4,
+                      "star": null
+                    },
+                    {
+                      "text": "Độc đáo, mang tính đặc trưng",
+                      "points": 6,
+                      "star": 4
+                    },
+                    {
+                      "text": "Rất độc đáo và có tính đặc trưng",
+                      "points": 9,
+                      "star": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "8",
+              "title": "ĐẢM BẢO CHẤT LƯỢNG SẢN PHẨM",
+              "max": 4,
+              "criteria": [
+                {
+                  "code": "8",
+                  "title": "ĐẢM BẢO CHẤT LƯỢNG SẢN PHẨM",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không có hoạt động kiểm soát chất lượng sản phẩm",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có kế hoạch kiểm soát nội bộ chất lượng sản phẩm",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có kế hoạch kiểm soát nội bộ gắn với truy xuất nguồn gốc theo quy định",
+                      "points": 4,
+                      "star": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "9",
+              "title": "CƠ HỘI THỊ TRƯỜNG TOÀN CẦU",
+              "max": 5,
+              "criteria": [
+                {
+                  "code": "9",
+                  "title": "CƠ HỘI THỊ TRƯỜNG TOÀN CẦU",
+                  "max": 5,
+                  "notes": [
+                    "Ghi chú: Đánh giá dựa trên các hợp đồng xuất khẩu đã thực hiện, hoặc các chứng nhận chất lượng đã được cấp, hoặc các thông tin về đánh giá thị trường, kết quả xúc tiến thương mại ở các thị trường tiềm năng."
+                  ],
+                  "options": [
+                    {
+                      "text": "Có thể xuất khẩu đến thị trường khu vực Đông Nam Á",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có thể xuất khẩu các thị trường ngoài khu vực Đông Nam Á",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có thể xuất khẩu đến các thị trường có tiêu chuẩn cao (Mỹ, Nhật, EU...)",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "footerNotes": [
+        "Ghi chú: Dấu sao là yêu cầu tối thiểu phải đạt theo các cấp độ sao (*** - 3 sao; **** - 4 sao; *****- 5 sao)"
+      ]
+    },
+    {
+      "no": 25,
+      "name": "Động vật cảnh",
+      "product": "Sinh vật cảnh",
+      "group": null,
+      "pdfPages": [
+        138,
+        141
+      ],
+      "disqualifiedWhen": "Giả mạo hồ sơ hoặc không đáp ứng quy định Hồ sơ đăng ký theo quy định",
+      "parts": [
+        {
+          "code": "A",
+          "title": "SẢN PHẨM VÀ SỨC MẠNH CỦA CỘNG ĐỒNG",
+          "max": 40,
+          "sections": [
+            {
+              "code": "1",
+              "title": "TỔ CHỨC SẢN XUẤT",
+              "max": 19,
+              "criteria": [
+                {
+                  "code": "1.1",
+                  "title": "Nguồn gốc sản phẩm",
+                  "max": 4,
+                  "notes": [
+                    "Yêu cầu: 100% sản phẩm được nuôi trên địa bàn cấp tỉnh"
+                  ],
+                  "options": [
+                    {
+                      "text": "Có sản phẩm được nuôi trên địa bàn cấp xã, nhưng tỷ lệ dưới 50%",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm được nuôi trên địa bàn cấp xã từ 50% đến dưới 75%",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm được nuôi trên địa bàn cấp xã từ 75% đến 100%",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.2",
+                  "title": "Gia tăng giá trị",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Nuôi, chăm sóc đơn giản",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Nuôi, chăm sóc, lựa chọn",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Nuôi, chăm sóc, lựa chọn với kỹ thuật tay nghề cao",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.3",
+                  "title": "Năng lực sản xuất để đáp ứng yêu cầu phân phối",
+                  "max": 3,
+                  "notes": [
+                    "(Khả năng sản xuất đáp ứng nhu cầu về số lượng/quy mô của thị trường, so sánh với quy mô trung bình ở cùng đối tượng sản xuất tại địa phương về sản lượng hoặc giá trị sản xuất)"
+                  ],
+                  "options": [
+                    {
+                      "text": "Có năng lực, quy mô sản xuất mức độ nhỏ",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có năng lực, quy mô sản xuất trung bình",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có năng lực, quy mô sản xuất lớn",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.4",
+                  "title": "Liên kết chuỗi trong sản xuất",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không có liên kết hoặc có liên kết nhưng không rõ ràng",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có hợp đồng liên kết từ 50% đến dưới 75% sản lượng tiêu thụ",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có hợp đồng liên kết trên 75% sản lượng tiêu thụ",
+                      "points": 2,
+                      "star": 4
+                    },
+                    {
+                      "text": "Có hợp đồng liên kết trên 75% sản lượng tiêu thụ và tổ chức thực hiện hợp đồng ổn định từ 12 tháng trở lên tính đến thời điểm đăng ký đánh giá, phân hạng OCOP",
+                      "points": 4,
+                      "star": 5
+                    }
+                  ]
+                },
+                {
+                  "code": "1.5",
+                  "title": "Bảo vệ môi trường trong quá trình sản xuất",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có Hồ sơ, thủ tục về môi trường theo quy định của pháp luật và các quy định khác về bảo vệ môi trường",
+                      "points": 1,
+                      "star": 4
+                    },
+                    {
+                      "text": "Có Hồ sơ, thủ tục về môi trường theo quy định của pháp luật về bảo vệ môi trường và hồ sơ minh chứng về công trình thu gom và xử lý chất thải theo quy định",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có Hồ sơ, thủ tục về môi trường theo quy định của pháp luật về bảo vệ môi trường; hồ sơ minh chứng về công trình thu gom và xử lý chất thải theo quy định và hồ sơ minh chứng về sử dụng bao gói thân thiện với môi trường",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.6",
+                  "title": "Sử dụng công nghệ theo hướng bền vững trong sản xuất",
+                  "max": 1,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không sử dụng công nghệ theo hướng bền vững trong sản xuất",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có áp dụng công nghệ theo hướng bền vững môi trường (công nghệ tiết kiệm nguyên liệu, nhiên liệu; hoạt động xử lý/tái chế chất thải; tận thu tái sử dụng, tái chế phụ phẩm nông nghiệp,...)",
+                      "points": 1,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "2",
+              "title": "PHÁT TRIỂN SẢN PHẨM",
+              "max": 9,
+              "criteria": [
+                {
+                  "code": "2.1",
+                  "title": "Nguồn gốc ý tưởng sản phẩm",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Sản phẩm được sản xuất phổ biến ở nhiều tỉnh, thành phố",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm được sản xuất phổ biến ở nhiều tỉnh, thành phố nhưng có chất lượng nổi trội, khác biệt do điều kiện về nguyên liệu, kỹ thuật truyền thống",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm được sản xuất ở nhiều nơi trên địa bàn, là sản phẩm đặc trưng của tỉnh, có chất lượng nổi trội/sản phẩm mới được chế biến từ nguyên liệu đặc trưng của địa phương",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm là đặc sản, truyền thống, chỉ sản xuất trên địa bàn của xã, có chất lượng đặc sắc, thương mại gắn với chỉ dẫn nguồn gốc địa lý",
+                      "points": 5,
+                      "star": 4
+                    }
+                  ]
+                },
+                {
+                  "code": "2.2",
+                  "title": "Phong cách, ghi nhãn sản phẩm (tem, nhãn gắn trên sản phẩm)",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Thông tin/thuyết minh về sản phẩm đầy đủ",
+                      "points": 1,
+                      "star": 3
+                    },
+                    {
+                      "text": "Thông tin/thuyết minh đầy đủ, thể hiện được thông điệp câu chuyện sản phẩm (hình ảnh hoặc lời giới thiệu)",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Thông tin/thuyết minh đầy đủ, ấn tượng, thể hiện được thông điệp câu chuyện sản phẩm (hình ảnh hoặc lời giới thiệu), có mã truy xuất nguồn gốc điện tử",
+                      "points": 4,
+                      "star": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "3",
+              "title": "SỨC MẠNH CỘNG ĐỒNG",
+              "max": 12,
+              "criteria": [
+                {
+                  "code": "3.1",
+                  "title": "Loại hình tổ chức sản xuất - kinh doanh",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Hộ sản xuất/hộ gia đình có đăng ký kinh doanh; hoặc trang trại; hoặc tổ hợp tác (có giấy đăng ký kinh doanh theo quy định)",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Công ty TNHH; hoặc doanh nghiệp tư nhân; hoặc công ty cổ phần có vốn góp của cộng đồng người địa phương <51%",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "HTX tổ chức, hoạt động theo đúng quy định của pháp luật; hoặc công ty cổ phần có vốn góp của cộng đồng người địa phương ≥ 51%",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "3.2",
+                  "title": "Đại diện pháp luật của chủ thể là nữ; hoặc đồng bào dân tộc thiểu số; hoặc người khuyết tật",
+                  "max": 1,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Đại diện pháp luật của chủ thể không phải nữ, không phải là đồng bào dân tộc thiểu số, không phải là người khuyết tật",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Đại diện pháp luật của chủ thể là nữ; hoặc là đồng bào dân tộc thiểu số; hoặc là người khuyết tật",
+                      "points": 1,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "3.3",
+                  "title": "Sử dụng lao động địa phương",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có sử dụng từ 25% đến dưới 50% lao động là người trên địa bàn cấp xã",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có sử dụng từ 50% đến 75% lao động là người trên địa bàn cấp xã",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có sử dụng ≥ 75% lao động là người trên địa bàn cấp xã",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "3.4",
+                  "title": "Tăng trưởng sản xuất kinh doanh",
+                  "max": 2,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Hợp tác xã xếp loại trung bình hoặc năm trước liền kề năm đánh giá có lợi nhuận cao hơn so với năm trước liền kề; các loại hình khác: Năm trước liền kề năm đánh giá có lợi nhuận cao hơn so với năm trước liền kề.",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Hợp tác xã xếp loại khá trở lên hoặc có 02 năm liên tiếp tăng trưởng dương về lợi nhuận tính từ năm trước liền kề năm đánh giá; các loại hình khác: Có 02 năm liên tiếp tăng trưởng dương về lợi nhuận tính từ năm trước liền kề năm đánh giá",
+                      "points": 2,
+                      "star": 4
+                    }
+                  ]
+                },
+                {
+                  "code": "3.5",
+                  "title": "Sở hữu trí tuệ",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Đơn đăng ký nhãn hiệu đã được cơ quan có thẩm quyền chấp nhận hoặc công bố (đã qua vòng thẩm định hình thức)",
+                      "points": 1,
+                      "star": 3
+                    },
+                    {
+                      "text": "Các nhãn hiệu sử dụng trên bao bì, nhãn của sản phẩm được cấp Giấy chứng nhận đăng ký nhãn hiệu và sản phẩm có sử dụng dấu hiệu chỉ dẫn nguồn gốc địa lý gắn với cộng đồng địa phương (trường hợp sản phẩm đã được nhà nước bảo hộ chỉ dẫn địa lý, nhãn hiệu tập thể, nhãn hiệu chứng nhận thì phải có văn bản ghi nhận quyền sử dụng)",
+                      "points": 2,
+                      "star": 4
+                    },
+                    {
+                      "text": "Các nhãn hiệu sử dụng trên bao bì, nhãn của sản phẩm được cấp Giấy chứng nhận đăng ký nhãn hiệu và sản phẩm có sử dụng dấu hiệu chỉ dẫn nguồn gốc địa lý gắn với cộng đồng địa phương (trường hợp sản phẩm đã được nhà nước bảo hộ chỉ dẫn địa lý, nhãn hiệu tập thể, nhãn hiệu chứng nhận thì phải có văn bản ghi nhận quyền sử dụng) và có Bằng độc quyền kiểu dáng công nghiệp, hoặc Bằng sáng chế, hoặc Bằng độc quyền giải pháp hữu ích, hoặc Giấy chứng nhận đăng ký quyền tác giả (trừ Giấy chứng nhận đăng ký quyền tác giả đối với nhãn hiệu).",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "title": "KHẢ NĂNG TIẾP THỊ",
+          "max": 25,
+          "sections": [
+            {
+              "code": "4",
+              "title": "TIẾP THỊ",
+              "max": 13,
+              "criteria": [
+                {
+                  "code": "4.1",
+                  "title": "Khu vực phân phối chính",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Thị trường trong địa bàn cấp xã",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Thị trường ngoài thị trường cấp xã",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Thị trường trong địa bàn cấp tỉnh",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Thị trường ngoài địa bàn cấp tỉnh",
+                      "points": 4,
+                      "star": null
+                    },
+                    {
+                      "text": "Thị trường quốc tế (có hợp đồng và minh chứng thực hiện hợp đồng)",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "4.2",
+                  "title": "Tổ chức phân phối",
+                  "max": 3,
+                  "notes": [
+                    "(Gồm: Tổ chức kinh doanh, phân phối sản phẩm)"
+                  ],
+                  "options": [
+                    {
+                      "text": "Không có người chịu trách nhiệm quản lý phân phối",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có người chịu trách nhiệm quản lý phân phối",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có bộ phận/phòng quản lý phân phối",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có bộ phận/phòng quản lý phân phối, có ứng dụng công nghệ thông tin trong quản lý",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "4.3",
+                  "title": "Quảng bá sản phẩm",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không có hoạt động quảng bá sản phẩm",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có 03 hoạt động quảng bá sản phẩm trở xuống",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có nhiều hơn 03 hoạt động quảng bá sản phẩm, có website của cơ sở (hoặc quảng bá trên mạng xã hội) và có tham gia hoạt động xúc tiến thương mại, hội chợ, triển lãm trong tỉnh",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có nhiều hơn 03 hoạt động quảng bá sản phẩm, có website của cơ sở (hoặc quảng bá trên mạng xã hội) và có tham gia hoạt động xúc tiến thương mại, hội chợ, triển lãm ngoài tỉnh",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có nhiều hơn 03 hoạt động quảng bá sản phẩm và có website của cơ sở (hoặc quảng bá trên mạng xã hội hoạt động thường xuyên) và có tham gia hoạt động xúc tiến thương mại, hội chợ, triển lãm ngoài tỉnh và quốc tế",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "5",
+              "title": "CÂU CHUYỆN SẢN PHẨM",
+              "max": 12,
+              "criteria": [
+                {
+                  "code": "5.1",
+                  "title": "Câu chuyện sản phẩm",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không có câu chuyện sản phẩm",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện sản phẩm",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện sản phẩm được tư liệu hóa và thể hiện trên tờ rơi",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện sản phẩm được tư liệu hóa, thể hiện trên tờ rơi và website (dưới dạng hình ảnh, clip,...)",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện sản phẩm được tư liệu hóa, thể hiện trên tờ rơi, website (dưới dạng hình ảnh, clip,...) và đưa vào nội dung truy xuất nguồn gốc điện tử",
+                      "points": 5,
+                      "star": 4
+                    }
+                  ]
+                },
+                {
+                  "code": "5.2",
+                  "title": "Cấu trúc câu chuyện sản phẩm",
+                  "max": 2,
+                  "notes": [
+                    "Chỉ áp dụng khi có câu chuyện sản phẩm"
+                  ],
+                  "options": [
+                    {
+                      "text": "Đơn giản",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Ngắn gọn, xúc tích",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Ngắn gọn, xúc tích và có văn phong kể chuyện",
+                      "points": 2,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "5.3",
+                  "title": "Trí tuệ/bản sắc địa phương",
+                  "max": 5,
+                  "notes": [
+                    "Yêu cầu: Nội dung câu chuyện sản phẩm OCOP phải thể hiện rõ nguồn gốc, tài nguyên bản địa, văn hóa, bản sắc địa phương, giá trị đặc trưng của sản phẩm, có tính truyền cảm và thuyết phục."
+                  ],
+                  "options": [
+                    {
+                      "text": "Giống với câu chuyện sản phẩm của chủ thể khác, hoặc sản phẩm khác của cùng chủ thể",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có câu chuyện riêng, gắn với nguồn gốc xuất xứ sản phẩm",
+                      "points": 1,
+                      "star": 3
+                    },
+                    {
+                      "text": "Nội dung câu chuyện mang sắc thái truyền thống, văn hóa địa phương và giá trị đặc trưng của sản phẩm",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Nội dung câu chuyện mang sắc thái truyền thống, văn hóa địa phương, giá trị đặc trưng của sản phẩm, có tính truyền cảm và thuyết phục",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "title": "CHẤT LƯỢNG SẢN PHẨM",
+          "max": 35,
+          "sections": [
+            {
+              "code": "6",
+              "title": "CHẤT LƯỢNG SẢN PHẨM",
+              "max": 15,
+              "criteria": [
+                {
+                  "code": "6.1",
+                  "title": "Hình dáng so với loại sản phẩm",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Trung bình",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Đẹp, ấn tượng",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Rất đẹp và ấn tượng",
+                      "points": 5,
+                      "star": 5
+                    }
+                  ]
+                },
+                {
+                  "code": "6.2",
+                  "title": "Màu sắc",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Phù hợp với đặc tính sản phẩm",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Đẹp, bắt mắt so với đặc tính sản phẩm",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Rất đẹp, bắt mắt và ấn tượng so với đặc tính sản phẩm",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "6.3",
+                  "title": "Kích thước, hình dạng bề ngoài",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không đồng đều",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Không đồng đều, chấp nhận được",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Tương đối đồng đều",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Đồng đều",
+                      "points": 5,
+                      "star": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "7",
+              "title": "TÍNH ĐỘC ĐÁO",
+              "max": 10,
+              "criteria": [
+                {
+                  "code": "7",
+                  "title": "TÍNH ĐỘC ĐÁO",
+                  "max": 10,
+                  "notes": [
+                    "Chất lượng: Có nét riêng, khác biệt, có dấu hiệu nhận biết rõ ràng so với sản phẩm khác, tiềm năng thành thương hiệu của địa phương"
+                  ],
+                  "options": [
+                    {
+                      "text": "Trung bình",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Tương đối độc đáo",
+                      "points": 5,
+                      "star": null
+                    },
+                    {
+                      "text": "Độc đáo, mang tính đặc trưng",
+                      "points": 7,
+                      "star": 4
+                    },
+                    {
+                      "text": "Rất độc đáo và có tính đặc trưng",
+                      "points": 10,
+                      "star": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "8",
+              "title": "ĐẢM BẢO CHẤT LƯỢNG SẢN PHẨM",
+              "max": 5,
+              "criteria": [
+                {
+                  "code": "8",
+                  "title": "ĐẢM BẢO CHẤT LƯỢNG SẢN PHẨM",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Không có hoạt động kiểm soát chất lượng sản phẩm",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Có kế hoạch kiểm soát nội bộ chất lượng sản phẩm",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có kế hoạch kiểm soát nội bộ gắn với truy xuất nguồn gốc theo quy định",
+                      "points": 5,
+                      "star": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "9",
+              "title": "CƠ HỘI THỊ TRƯỜNG TOÀN CẦU",
+              "max": 5,
+              "criteria": [
+                {
+                  "code": "9",
+                  "title": "CƠ HỘI THỊ TRƯỜNG TOÀN CẦU",
+                  "max": 5,
+                  "notes": [
+                    "Ghi chú: Đánh giá dựa trên các hợp đồng xuất khẩu đã thực hiện, hoặc các chứng nhận chất lượng đã được cấp, hoặc các thông tin về đánh giá thị trường, kết quả xúc tiến thương mại ở các thị trường tiềm năng."
+                  ],
+                  "options": [
+                    {
+                      "text": "Có thể xuất khẩu đến thị trường khu vực Đông Nam Á",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có thể xuất khẩu các thị trường ngoài khu vực Đông Nam Á",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có thể xuất khẩu đến các thị trường có tiêu chuẩn cao (Mỹ, Nhật, EU...)",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "footerNotes": [
+        "Ghi chú: Dấu sao là yêu cầu tối thiểu phải đạt theo các cấp độ sao (*** - 3 sao; **** - 4 sao; *****- 5 sao)"
+      ]
+    },
+    {
+      "no": 26,
+      "name": "Dịch vụ du lịch cộng đồng, du lịch sinh thái và điểm du lịch",
+      "product": "Dịch vụ du lịch cộng đồng, du lịch sinh thái và điểm du lịch",
+      "group": null,
+      "pdfPages": [
+        142,
+        146
+      ],
+      "disqualifiedWhen": null,
+      "parts": [
+        {
+          "code": "A",
+          "title": "SẢN PHẨM VÀ SỨC MẠNH CỘNG ĐỒNG",
+          "max": 40,
+          "sections": [
+            {
+              "code": "1",
+              "title": "TỔ CHỨC DỊCH VỤ CỘNG ĐỒNG",
+              "max": 14,
+              "criteria": [
+                {
+                  "code": "1.1",
+                  "title": "Bộ phận điều phối quản lý và điều hành dịch vụ",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có Bộ phận điều phối quản lý và điều hành dịch vụ",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có Bộ phận điều phối quản lý và điều hành dịch vụ, có kế hoạch và tổ chức triển khai kế hoạch quản lý, điều hành",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.2",
+                  "title": "Cơ chế quản lý/quy định",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có cơ chế/quy định quản lý hoạt động dịch vụ",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có cơ chế quản lý/quy định quản lý hoạt động dịch vụ được phân nhiệm rõ ràng",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có cơ chế quản lý/quy định quản lý hoạt động dịch vụ được phân nhiệm rõ ràng trên cơ sở người dân địa phương tham gia quản lý và vận hành và hưởng lợi (trực tiếp/gián tiếp)",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.3",
+                  "title": "Bảo vệ môi trường trong cộng đồng làm du lịch/điểm du lịch",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có giải pháp cụ thể về bảo vệ môi trường (thu gom rác thải, nước thải sinh hoạt...)",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có giải pháp cụ thể và trang bị hạ tầng kỹ thuật chung về bảo vệ môi trường",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có giải pháp cụ thể và có trang bị hạ tầng kỹ thuật bảo vệ môi trường và triển khai mô hình cộng đồng tự quản về môi trường",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có giải pháp cụ thể và có trang bị hạ tầng kỹ thuật bảo vệ môi trường và triển khai mô hình cộng đồng tự quản về môi trường, đạt chuẩn tiêu chí về môi trường trong xây dựng NTM hoặc có đánh giá tác động môi trường theo quy định hiện hành",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "1.4",
+                  "title": "Sử dụng năng lượng tiết kiệm",
+                  "max": 2,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có giải pháp tiết kiệm năng lượng (bằng hoạt động cụ thể)",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có giải pháp tiết kiệm, thu hồi năng lượng, tái sử dụng năng lượng, nguyên liệu tại địa phương và sử dụng công nghệ thân thiện với môi trường",
+                      "points": 2,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "2",
+              "title": "PHÁT TRIỂN SẢN PHẨM",
+              "max": 12,
+              "criteria": [
+                {
+                  "code": "2.1",
+                  "title": "Nguồn gốc ý tưởng sản phẩm dịch vụ du lịch",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Phát triển dựa trên sản phẩm của nơi khác, có dựa trên lợi thế và đặc trưng của địa phương",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Phát triển dựa trên ý tưởng của mình, không trùng lắp với các sản phẩm du lịch khác",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có tính độc đáo, khác biệt và có gắn kết các giá trị văn hóa truyền thống của địa phương vào sản phẩm du lịch",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "2.2",
+                  "title": "Tổ chức dịch vụ theo thị trường mục tiêu",
+                  "max": 2,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có kế hoạch phát triển thị trường mục tiêu",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có kế hoạch và có các sản phẩm dịch vụ du lịch phù hợp với thị trường mục tiêu.",
+                      "points": 2,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "2.3",
+                  "title": "Bảo vệ, bảo tồn các di sản văn hóa, thiên nhiên, đa dạng sinh học liên quan đến sản phẩm dịch vụ du lịch",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có hoạt động bảo vệ và bảo tồn các di sản văn hóa/thiên nhiên, hệ sinh thái, đa dạng sinh học",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có Chương trình/kế hoạch chung của cộng đồng, có hoạt động bảo vệ và bảo tồn các di sản văn hóa/thiên nhiên, hệ sinh thái, đa dạng sinh học",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có Chương trình/kế hoạch chung của cộng đồng, cả cộng đồng đều có hoạt động bảo vệ và bảo tồn các di sản văn hóa/thiên nhiên, hệ sinh thái, đa dạng sinh học",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "3",
+              "title": "SỨC MẠNH CỘNG ĐỒNG",
+              "max": 14,
+              "criteria": [
+                {
+                  "code": "3.1",
+                  "title": "Loại hình tổ chức sản xuất - kinh doanh",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Hộ sản xuất/hộ gia đình có đăng ký kinh doanh; hoặc trang trại; hoặc tổ hợp tác (có giấy đăng ký kinh doanh theo quy định)",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Công ty TNHH; hoặc doanh nghiệp tư nhân; hoặc công ty cổ phần có vốn góp của cộng đồng người địa phương <51%",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "HTX tổ chức, hoạt động theo đúng quy định của pháp luật; hoặc công ty cổ phần có vốn góp của cộng đồng người địa phương ≥ 51%; hoặc các đối tượng còn lại",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "3.2",
+                  "title": "Đại diện pháp luật của chủ thể là nữ; hoặc đồng bào dân tộc thiểu số; hoặc người khuyết tật",
+                  "max": 1,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Đại diện pháp luật của chủ thể không phải nữ, không phải là đồng bào dân tộc thiểu số, không phải là người khuyết tật",
+                      "points": 0,
+                      "star": null
+                    },
+                    {
+                      "text": "Đại diện pháp luật của chủ thể là nữ; hoặc là đồng bào dân tộc thiểu số; hoặc là người khuyết tật",
+                      "points": 1,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "3.3",
+                  "title": "Sử dụng lao động địa phương",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có sử dụng từ 25% đến dưới 50% lao động là người trên địa bàn cấp xã",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có sử dụng từ 50% đến 75% lao động là người trên địa bàn cấp xã",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có sử dụng ≥ 75% lao động là người trên địa bàn cấp xã",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "3.4",
+                  "title": "Tăng trưởng sản xuất kinh doanh",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Hợp tác xã xếp loại trung bình hoặc năm trước liền kề năm đánh giá có lợi nhuận cao hơn so với năm trước liền kề; các loại hình khác: Năm trước liền kề năm đánh giá có lợi nhuận cao hơn so với năm trước liền kề.",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Hợp tác xã xếp loại khá trở lên hoặc có 02 năm liên tiếp tăng trưởng dương về lợi nhuận tính từ năm trước liền kề năm đánh giá; các loại hình khác: Có 02 năm liên tiếp tăng trưởng dương về lợi nhuận tính từ năm trước liền kề năm đánh giá",
+                      "points": 3,
+                      "star": 4
+                    }
+                  ]
+                },
+                {
+                  "code": "3.5",
+                  "title": "Sở hữu trí tuệ",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Đơn đăng ký nhãn hiệu đã được cơ quan có thẩm quyền chấp nhận hoặc công bố (đã qua vòng thẩm định hình thức)",
+                      "points": 1,
+                      "star": 3
+                    },
+                    {
+                      "text": "Các nhãn hiệu sử dụng đối với dịch vụ du lịch được cấp Giấy chứng nhận đăng ký nhãn hiệu và có sử dụng dấu hiệu chỉ dẫn nguồn gốc địa lý gắn với cộng đồng địa phương (trường hợp sản phẩm đã được nhà nước bảo hộ chỉ dẫn địa lý, nhãn hiệu tập thể, nhãn hiệu chứng nhận thì phải có văn bản ghi nhận quyền sử dụng)",
+                      "points": 2,
+                      "star": 4
+                    },
+                    {
+                      "text": "Các nhãn hiệu sử dụng đối với dịch vụ du lịch được cấp Giấy chứng nhận đăng ký nhãn hiệu và có sử dụng dấu hiệu chỉ dẫn nguồn gốc địa lý gắn với cộng đồng địa phương (trường hợp sản phẩm đã được nhà nước bảo hộ chỉ dẫn địa lý, nhãn hiệu tập thể, nhãn hiệu chứng nhận thì phải có văn bản ghi nhận quyền sử dụng) và có Bằng độc quyền kiểu dáng công nghiệp, hoặc Bằng sáng chế, hoặc Bằng độc quyền giải pháp hữu ích, hoặc Giấy chứng nhận đăng ký quyền tác giả (trừ Giấy chứng nhận đăng ký quyền tác giả đối với nhãn hiệu).",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "title": "KHẢ NĂNG TIẾP THỊ",
+          "max": 25,
+          "sections": [
+            {
+              "code": "4",
+              "title": "TIẾP THỊ",
+              "max": 17,
+              "criteria": [
+                {
+                  "code": "4.1",
+                  "title": "Liên kết chuỗi giá trị trong quảng bá sản phẩm du lịch",
+                  "max": 5,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có đại diện/đại lý quảng bá sản phẩm",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có ≥ 3 đại diện/đại lý quảng bá sản phẩm trong và ngoài tỉnh",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có ≥ 5 đại diện/đại lý quảng bá sản phẩm trong và ngoài tỉnh",
+                      "points": 5,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "4.2",
+                  "title": "Liên kết vùng và chuỗi giá trị trong sản phẩm dịch vụ du lịch",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có liên kết với các điểm dịch vụ du lịch khác trong tỉnh để hình thành sản phẩm du lịch",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có liên kết với các điểm dịch vụ du lịch khác trong và ngoài tỉnh để hình thành sản phẩm du lịch",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có liên kết với các điểm dịch vụ du lịch khác trong, ngoài tỉnh và quốc tế để hình thành sản phẩm du lịch",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "4.3",
+                  "title": "Tổ chức quảng bá, bán hàng",
+                  "max": 2,
+                  "notes": [
+                    "(Gồm: Tổ chức kinh doanh, phân phối sản phẩm)"
+                  ],
+                  "options": [
+                    {
+                      "text": "Có người chịu trách nhiệm quản lý quảng bá, phân phối sản phẩm du lịch",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có bộ phận/phòng quản lý quảng bá, phân phối, có ứng dụng công nghệ thông tin trong quản lý/phân phối sản phẩm du lịch",
+                      "points": 2,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "4.4",
+                  "title": "Quảng bá sản phẩm",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có nhiều hoạt động quảng bá, có trang thông tin điện tử (website) giới thiệu về điểm, cộng đồng du lịch",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có nhiều hoạt động quảng bá, có trang thông tin điện tử (website) giới thiệu về điểm, cộng đồng du lịch, có sử dụng kênh đặt dịch vụ trực tuyến (online)",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có nhiều hoạt động quảng bá, có trang thông tin điện tử (website) giới thiệu về điểm, cộng đồng du lịch, có sử dụng kênh đặt dịch vụ trực tuyến (online) trong nước và quốc tế uy tín (Booking, Agoda, NPB, TripAdvisor, Traveloka, iVivu...)",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Có nhiều hoạt động quảng bá quốc tế, có trang thông tin điện tử (website) bằng tiếng nước ngoài giới thiệu về điểm, cộng đồng du lịch, có sử dụng kênh đặt dịch vụ trực tuyến (online) trong nước và quốc tế uy tín (Booking, Agoda, NPB, TripAdvisor, Traveloka, iVivu...) có hoạt động quảng bá quốc tế",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "4.5",
+                  "title": "Bộ nhận diện quảng bá sản phẩm",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có tờ rơi quảng bá về dịch vụ du lịch",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có phim ngắn (video clip), tranh ảnh áp-phích (poster), có thông tin quảng bá về dịch vụ du lịch trên các ấn phẩm",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có phim ngắn (video clip), tranh ảnh áp-phích (poster), có thông tin quảng bá về dịch vụ du lịch trên các ấn phẩm được thể hiện bằng tiếng tiếng Việt và ít nhất 01 tiếng nước ngoài phù hợp.",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "5",
+              "title": "CÂU CHUYỆN SẢN PHẨM",
+              "max": 8,
+              "criteria": [
+                {
+                  "code": "5.1",
+                  "title": "Câu chuyện sản phẩm",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có Cẩm nang/câu chuyện liên quan đến sản phẩm dịch vụ du lịch",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có Cẩm nang hoặc câu chuyện liên quan đến sản phẩm dịch vụ du lịch có tính riêng, đặc sắc, thể hiện trí tuệ bản sắc địa phương",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có Cẩm nang hoặc câu chuyện liên quan đến sản phẩm dịch vụ du lịch có tính riêng, đặc sắc, thể hiện trí tuệ bản sắc địa phương và được thể hiện bằng tiếng nước ngoài phù hợp",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "5.2",
+                  "title": "Trình bày câu chuyện sản phẩm",
+                  "max": 2,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Cẩm nang/câu chuyện được tư liệu hóa và trình bày tại điểm cung cấp dịch vụ du lịch",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Cẩm nang/câu chuyện được tư liệu hóa và trình bày tại điểm du lịch trong và ngoài tỉnh.",
+                      "points": 2,
+                      "star": null
+                    }
+                  ]
+                },
+                {
+                  "code": "5.3",
+                  "title": "Sản phẩm dịch vụ du lịch trên địa bàn đạt chuẩn nông thôn mới",
+                  "max": 2,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Dịch vụ du lịch do cộng đồng cung cấp/ Điểm du lịch trên địa bàn xã hoặc thôn, bản, ấp chưa được công nhận đạt chuẩn nông thôn mới hoặc không thuộc khu vực nông thôn.",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Dịch vụ du lịch do cộng đồng cung cấp/ Điểm du lịch trên địa bàn xã hoặc thôn, bản, ấp đã được công nhận đạt chuẩn nông thôn mới",
+                      "points": 2,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "title": "CHẤT LƯỢNG SẢN PHẨM",
+          "max": 35,
+          "sections": [
+            {
+              "code": "6",
+              "title": "Vị trí",
+              "max": 3,
+              "criteria": [
+                {
+                  "code": "6",
+                  "title": "Vị trí",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Thuận lợi, dễ tiếp cận",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Thuận lợi, dễ tiếp cận, liền kề khu vực có lợi thế phát triển du lịch",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Thuận lợi, dễ tiếp cận, liền kề và có kết nối với khu vực/địa điểm có lợi thế phát triển du lịch khác.",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "7",
+              "title": "Kiến trúc và cảnh quan môi trường",
+              "max": 3,
+              "criteria": [
+                {
+                  "code": "7",
+                  "title": "Kiến trúc và cảnh quan môi trường",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Cảnh quan môi trường sạch đẹp",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Cảnh quan môi trường sạch đẹp, kiến trúc mang đặc trưng vùng miền, có tính dân tộc;",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Cảnh quan môi trường sạch đẹp, kiến trúc mang đặc trưng vùng miền, có tính dân tộc; xã/thôn đạt tiêu chí sáng - xanh - sạch đẹp trong xây dựng nông thôn mới",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "8",
+              "title": "Đáp ứng điều kiện kinh doanh dịch vụ",
+              "max": 3,
+              "criteria": [
+                {
+                  "code": "8",
+                  "title": "Đáp ứng điều kiện kinh doanh dịch vụ",
+                  "max": 3,
+                  "notes": [
+                    "Lựa chọn một trong hai trường hợp sau:",
+                    "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp",
+                    "b. Trường hợp 2: Điểm dịch vụ du lịch"
+                  ],
+                  "options": [
+                    {
+                      "text": "Các cơ sở cung cấp dịch vụ đáp ứng đủ yêu cầu về đăng ký kinh doanh và điều kiện kinh doanh theo quy định của pháp luật",
+                      "points": 1,
+                      "star": null,
+                      "case": "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp"
+                    },
+                    {
+                      "text": "Các cơ sở cung cấp dịch vụ đáp ứng đủ yêu cầu về đăng ký kinh doanh và điều kiện kinh doanh và có cơ sở kinh doanh dịch vụ du lịch đạt tiêu chuẩn phục vụ khách du lịch theo Luật Du lịch",
+                      "points": 3,
+                      "star": null,
+                      "case": "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp"
+                    },
+                    {
+                      "text": "Đáp ứng đủ điều kiện về đăng ký kinh doanh và điều kiện kinh doanh theo quy định của pháp luật",
+                      "points": 1,
+                      "star": null,
+                      "case": "b. Trường hợp 2: Điểm dịch vụ du lịch"
+                    },
+                    {
+                      "text": "Đáp ứng đủ điều kiện về đăng ký kinh doanh và điều kiện kinh doanh theo quy định của pháp luật và được công nhận điểm du lịch hoặc có cơ sở kinh doanh dịch vụ du lịch đạt tiêu chuẩn phục vụ khách du lịch theo Luật Du lịch",
+                      "points": 3,
+                      "star": null,
+                      "case": "b. Trường hợp 2: Điểm dịch vụ du lịch"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "9",
+              "title": "Đảm bảo an toàn và an ninh trật tự",
+              "max": 2,
+              "criteria": [
+                {
+                  "code": "9",
+                  "title": "Đảm bảo an toàn và an ninh trật tự",
+                  "max": 2,
+                  "notes": [
+                    "Lựa chọn một trong hai trường hợp sau:",
+                    "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp",
+                    "b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp"
+                  ],
+                  "options": [
+                    {
+                      "text": "Các cơ sở cung ứng dịch vụ đáp ứng điều kiện về về an ninh, trật tự, an toàn về phòng cháy và chữa cháy, bảo vệ môi trường, an toàn thực phẩm theo quy định của pháp luật",
+                      "points": 1,
+                      "star": null,
+                      "case": "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp"
+                    },
+                    {
+                      "text": "Các cơ sở cung ứng dịch vụ đáp ứng yêu cầu (1) và có thực hiện hướng dẫn, tập huấn thường xuyên/định kỳ cho nhân viên",
+                      "points": 2,
+                      "star": null,
+                      "case": "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp"
+                    },
+                    {
+                      "text": "Đáp ứng điều kiện về an ninh, trật tự, an toàn về phòng cháy và chữa cháy, bảo vệ môi trường, an toàn thực phẩm theo quy định của pháp luật",
+                      "points": 1,
+                      "star": null,
+                      "case": "b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp"
+                    },
+                    {
+                      "text": "Đáp ứng điều kiện về an ninh, trật tự, an toàn về phòng cháy và chữa cháy, bảo vệ môi trường, an toàn thực phẩm theo quy định của pháp luật và có thực hiện hướng dẫn, tập huấn thường xuyên/định kỳ cho nhân viên",
+                      "points": 2,
+                      "star": null,
+                      "case": "b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "10",
+              "title": "Tính hoàn thiện của quá trình dịch vụ",
+              "max": 3,
+              "criteria": [
+                {
+                  "code": "10",
+                  "title": "Tính hoàn thiện của quá trình dịch vụ",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có điểm trưng bày, giới thiệu và bán sản phẩm truyền thống địa phương",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có điểm trưng bày, giới thiệu và bán sản phẩm truyền thống và sản phẩm OCOP của địa phương, có tài liệu giới thiệu về sản phẩm, dịch vụ.",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có điểm trưng bày, giới thiệu và bán sản phẩm truyền thống và sản phẩm OCOP của địa phương, có tài liệu giới thiệu về sản phẩm, dịch vụ, địa điểm bán có hạ tầng (bãi đỗ, nhà vệ sinh, khu giới thiệu về dịch vụ) được bố trí hài hòa.",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "11",
+              "title": "Hoạt động trải nghiệm",
+              "max": 2,
+              "criteria": [
+                {
+                  "code": "11",
+                  "title": "Hoạt động trải nghiệm",
+                  "max": 2,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có hoạt động trải nghiệm",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có mô hình hoạt động trải nghiệm",
+                      "points": 2,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "12",
+              "title": "Quản lý và nhân viên",
+              "max": 3,
+              "criteria": [
+                {
+                  "code": "12",
+                  "title": "Quản lý và nhân viên",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có dưới 50% lao động tham gia quản lý và nhân viên đã được đào tạo về chuyên môn, nghiệp vụ",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có từ 50 - 75% lao động tham gia quản lý và nhân viên đã qua đào tạo về chuyên môn, nghiệp vụ",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Trên 75% lao động tham gia quản lý và nhân viên đã qua đào tạo về chuyên môn, nghiệp vụ; có nhân viên tiếp đón thành thạo ít nhất 1 ngoại ngữ",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "13",
+              "title": "Chất lượng sản phẩm dịch vụ du lịch",
+              "max": 4,
+              "criteria": [
+                {
+                  "code": "13",
+                  "title": "Chất lượng sản phẩm dịch vụ du lịch",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Sản phẩm dịch vụ du lịch phong phú, hấp dẫn",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm dịch vụ du lịch phong phú, hấp dẫn, an toàn, chất lượng cao",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm dịch vụ du lịch phong phú, hấp dẫn, an toàn, chất lượng cao và được du khách đánh giá cao qua phiếu đánh giá, bình chọn của khách hàng trên các trang điện tử dịch vụ lữ hành, du lịch uy tín (Booking, Agoda, TripAdvisor, Traveloka, iVivu...).",
+                      "points": 3,
+                      "star": null
+                    },
+                    {
+                      "text": "Sản phẩm dịch vụ du lịch phong phú, hấp dẫn, an toàn, chất lượng cao, mang đặc sắc vùng miền và được du khách đánh giá cao qua phiếu đánh giá, bình chọn của khách hàng trên các trang điện tử dịch vụ lữ hành, du lịch uy tín (Booking, Agoda, TripAdvisor, Traveloka, iVivu...).",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "14",
+              "title": "Chất lượng phục vụ",
+              "max": 4,
+              "criteria": [
+                {
+                  "code": "14",
+                  "title": "Chất lượng phục vụ",
+                  "max": 4,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Thái độ phục vụ thân thiện, nhanh nhẹn, chu đáo",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Thái độ phục vụ thân thiện, nhanh nhẹn, chu đáo, được du khách đánh giá cao",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Thái độ phục vụ thân thiện, nhanh nhẹn, chu đáo, được du khách đánh giá cao qua phiếu đánh giá, bình chọn của khách hàng trên các trang điện tử dịch vụ lữ hành, du lịch uy tín (Booking, Agoda, TripAdvisor, Traveloka, iVivu...).",
+                      "points": 4,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "15",
+              "title": "Tiện nghi",
+              "max": 3,
+              "criteria": [
+                {
+                  "code": "15",
+                  "title": "Tiện nghi",
+                  "max": 3,
+                  "notes": [
+                    "Lựa chọn một trong hai trường hợp sau:",
+                    "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp",
+                    "b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp"
+                  ],
+                  "options": [
+                    {
+                      "text": "Hạ tầng giao thông nội bộ thuận tiện, điện, nước sạch, khu vệ sinh, dịch vụ internet đầy đủ",
+                      "points": 1,
+                      "star": null,
+                      "case": "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp"
+                    },
+                    {
+                      "text": "Hạ tầng giao thông nội bộ thuận tiện, điện, nước sạch, khu vệ sinh, dịch vụ internet đầy đủ, xã/thôn có các tiêu chí (giao thông, điện, nước, vệ sinh môi trường, an toàn thực phẩm) đạt chuẩn nông thôn mới.",
+                      "points": 3,
+                      "star": null,
+                      "case": "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp"
+                    },
+                    {
+                      "text": "Có hệ thống điện, nước sạch, khu vệ sinh, dịch vụ internet đầy đủ",
+                      "points": 1,
+                      "star": null,
+                      "case": "b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp"
+                    },
+                    {
+                      "text": "Có hệ thống điện, nước sạch, khu vệ sinh, dịch vụ internet đầy đủ, đảm bảo chất lượng và khách đánh giá cao.",
+                      "points": 3,
+                      "star": null,
+                      "case": "b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "16",
+              "title": "Hoạt động thu hút khách du lịch",
+              "max": 3,
+              "criteria": [
+                {
+                  "code": "16",
+                  "title": "Hoạt động thu hút khách du lịch",
+                  "max": 3,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Có cung cấp, tổ chức hoạt động trình diễn lễ, hội, văn hóa tại điểm dịch vụ du lịch",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Có cung cấp, tổ chức hoạt động trình diễn lễ hội, văn hóa tại điểm dịch vụ du lịch và mang tính cộng đồng ít nhất 2 lần/năm",
+                      "points": 2,
+                      "star": null
+                    },
+                    {
+                      "text": "Có cung cấp, tổ chức hoạt động trình diễn lễ hội, văn hóa tại điểm dịch vụ du lịch và mang tính cộng đồng, đặc sắc văn hóa dân tộc, vùng miền ít nhất 2 lần/năm",
+                      "points": 3,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "17",
+              "title": "Hàng hóa dịch vụ (ăn uống, đồ lưu niệm...)",
+              "max": 2,
+              "criteria": [
+                {
+                  "code": "17",
+                  "title": "Hàng hóa dịch vụ (ăn uống, đồ lưu niệm...)",
+                  "max": 2,
+                  "notes": [],
+                  "options": [
+                    {
+                      "text": "Hàng hóa dịch vụ có nguồn gốc rõ ràng, có tiêu chuẩn chất lượng phù hợp mang tính đặc sản địa phương",
+                      "points": 1,
+                      "star": null
+                    },
+                    {
+                      "text": "Hàng hóa dịch vụ có nguồn gốc rõ ràng, có tiêu chuẩn chất lượng phù hợp mang tính đặc sản địa phương, và bảo đảm vệ sinh an toàn thực phẩm, có sản phẩm OCOP được bày, bán",
+                      "points": 2,
+                      "star": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "footerNotes": []
+    }
+  ],
+  "uncertain": [
+    {
+      "set": 24,
+      "where": "criterion 1.3 note",
+      "issue": "scan shows 'tại địaphương' with no visible space; transcribed as printed (set 25 has 'địa phương')"
+    },
+    {
+      "set": 24,
+      "where": "section 6 (6.3, 6.4), sections 7-8 points column, PDF p136",
+      "issue": "vertical scan artifact runs through the points column; digits read as 6.3: 1,2,3,5; 6.4: 1,2,3; 7: 2,4,6,9; 8: 0,2,4 (sums agree with printed maxima)"
+    },
+    {
+      "set": 25,
+      "where": "criterion 2.2 option 3",
+      "issue": "asterisks after 'điện tử' read as 4 (****); the same option in set 24 has 5 (*****). Count at scan resolution, please verify"
+    },
+    {
+      "set": 24,
+      "where": "header",
+      "issue": "header prints only '(Sản phẩm: Sinh vật cảnh)', no 'Nhóm:'; group set to null"
+    },
+    {
+      "set": 25,
+      "where": "header",
+      "issue": "header prints only '(Sản phẩm: Sinh vật cảnh)', no 'Nhóm:'; group set to null"
+    },
+    {
+      "set": 26,
+      "where": "header",
+      "issue": "header prints only '(Sản phẩm: Dịch vụ du lịch cộng đồng, du lịch sinh thái và điểm du lịch)', no 'Nhóm:'; group set to null. No 'Hồ sơ bị loại khi' line on this sheet; disqualifiedWhen = null. No 'Ghi chú' star legend after the table; footerNotes empty"
+    },
+    {
+      "set": 26,
+      "where": "Phần A heading",
+      "issue": "heading text prints 'SẢN PHẨM VÀ SỨC MẠNH CỘNG ĐỒNG (35 Điểm)' but the points column prints 40 and sections sum to 40; max kept as 40"
+    },
+    {
+      "set": 26,
+      "where": "section 9 case a option 1",
+      "issue": "printed 'đáp ứng điều kiện về về an ninh' (duplicated 'về'); kept verbatim"
+    },
+    {
+      "set": 26,
+      "where": "criterion 4.5 option 3",
+      "issue": "printed 'bằng tiếng tiếng Việt' (duplicated 'tiếng'); kept verbatim"
+    },
+    {
+      "set": 26,
+      "where": "ellipses in 1.3 option 1, 4.4, 13, 14, 17",
+      "issue": "cannot distinguish '…' from '...' at scan resolution; transcribed as '...'"
+    }
+  ]
+}

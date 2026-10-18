@@ -1,0 +1,52 @@
+name: deploy
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      # Reads the version from "packageManager" in package.json.
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm check
+      # postbuild runs scripts/check-dist.mjs: no external resource on any page.
+      - run: pnpm build
+
+      - name: Deploy cham-ocop
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: pnpm exec wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+
+      # hclabs.co has Bot Fight Mode on, which answers 403 to GitHub runner IPs;
+      # workers.dev serves the same Worker version without that zone setting.
+      - name: Smoke test production
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          base=https://cham-ocop.ch-nh.workers.dev
+          for path in / /cham/che-tuoi-che-che-bien/ /han-giay-chung-nhan/ /nguon/; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$base$path")
+            echo "$path -> $code"
+            [ "$code" = 200 ]
+          done
+          curl -s "$base/cham/che-tuoi-che-che-bien/" | grep -q 'Chè tươi, chè chế biến'

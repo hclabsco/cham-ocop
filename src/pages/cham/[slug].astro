@@ -1,0 +1,204 @@
+---
+import Base from "../../layouts/Base.astro";
+import { categoryOf, criteriaCount, sheets } from "../../data/sheets";
+import { contact, source } from "../../data/site";
+import type { Sheet } from "../../lib/types";
+
+export function getStaticPaths() {
+  return sheets.map((sheet) => ({ params: { slug: sheet.slug }, props: { sheet } }));
+}
+
+const { sheet } = Astro.props as { sheet: Sheet };
+const total = criteriaCount(sheet);
+const pdfHref = `/nguon/${source.file}#page=${sheet.pdfPages[0]}`;
+const markerLabel = { 3: "Bắt buộc 3★", 4: "Bắt buộc 4★", 5: "Bắt buộc 5★" } as const;
+---
+
+<Base
+  title={`Tiêu chí OCOP ${sheet.name}: tự chấm điểm, xem mấy sao · Chấm OCOP`}
+  description={`Phiếu chấm OCOP bộ "${sheet.name}" theo ${source.doc}: ${total} tiêu chí, 100 điểm. Đánh dấu mức cơ sở đang đạt, biết ngay tổng điểm, hạng sao và tiêu chí còn thiếu.`}
+>
+  <div class="page pt-8 sm:pt-10">
+    <nav class="no-print text-[14px] text-muted" aria-label="Vị trí">
+      <a href="/" class="text-muted">Chấm điểm</a> <span aria-hidden="true">/</span> {categoryOf(sheet)}
+    </nav>
+    <h1 class="h1 m-0 mt-3 max-w-[22ch]">{sheet.name}</h1>
+    <p class="mt-3 text-ink-soft">
+      {sheet.product}{sheet.group && ` · ${sheet.group}`} · {total} tiêu chí · Phiếu chấm bộ số {sheet.no}, Phụ lục II,
+      {source.doc} (<a href={pdfHref}>trang {sheet.pdfPages[0]}–{sheet.pdfPages[1]} của bản PDF</a>)
+    </p>
+    {
+      sheet.disqualifiedWhen && (
+        <p class="card border-accent/40 bg-accent-soft mt-5 p-4 max-w-[80ch] text-[15px]">
+          <strong>Hồ sơ bị loại khi:</strong> {sheet.disqualifiedWhen}
+        </p>
+      )
+    }
+  </div>
+
+  <div class="page mt-8 pb-16 lg:pb-0 grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px] items-start">
+    <form id="score-form" class="grid gap-10" data-slug={sheet.slug} aria-describedby="form-help">
+      <p id="form-help" class="no-print m-0 text-ink-soft">
+        Mỗi tiêu chí chọn một mức đúng với cơ sở hiện nay. Chưa chắc thì để trống, tiêu chí đó được tính 0 điểm. Lựa chọn
+        được lưu trên trình duyệt của anh chị, không gửi đi đâu.
+      </p>
+      {
+        sheet.parts.map((part) => (
+          <section aria-labelledby={`part-${part.code}`}>
+            <h2 id={`part-${part.code}`} class="h2 m-0 flex items-baseline justify-between gap-4">
+              <span>
+                Phần {part.code}. {part.title.charAt(0) + part.title.slice(1).toLowerCase()}
+              </span>
+              <span class="text-[16px] font-bold text-muted whitespace-nowrap">
+                <span data-part-score={part.code}>0</span>/{part.max} điểm
+              </span>
+            </h2>
+            {part.sections.map((section) => (
+              <div class="mt-6">
+                {!(section.criteria.length === 1 && section.criteria[0].code === section.code) && (
+                  <h3 class="m-0 text-[13px] uppercase tracking-[0.08em] text-muted font-bold">
+                    {section.code}. {section.title} · {section.max} điểm
+                  </h3>
+                )}
+                {section.notes?.map((n) => (
+                  <p class="m-0 mt-2 text-[14px] italic text-ink-soft">{n}</p>
+                ))}
+                <div class="mt-3 grid gap-4">
+                  {section.criteria.map((c, ci) => (
+                    <>
+                      {c.heading && c.heading !== section.criteria[ci - 1]?.heading && (
+                        <p class="m-0 mt-2 font-bold text-ink-soft">{c.heading}</p>
+                      )}
+                      <fieldset id={`c-${c.code}`} class="card p-4 sm:p-5 m-0" data-code={c.code}>
+                        <legend class="sr-only">
+                          {c.code}. {c.title}
+                        </legend>
+                        <div class="flex items-start justify-between gap-4" aria-hidden="true">
+                          <p class="m-0 font-bold text-[17px] leading-snug">
+                            <span class="text-muted">{c.code}.</span> {c.title}
+                          </p>
+                          <span class="chip bg-bg-deep text-ink-soft">
+                            <span data-crit-score={c.code}>0</span>/{c.max}
+                          </span>
+                        </div>
+                        {c.notes.map((n) => (
+                          <p class="m-0 mt-2 text-[14px] italic text-ink-soft">{n}</p>
+                        ))}
+                        <div class="mt-3 grid gap-2">
+                          {c.options.map((o, oi) => (
+                            <>
+                              {o.case && o.case !== c.options[oi - 1]?.case && (
+                                <p class="m-0 mt-1 text-[14px] font-bold text-ink-soft">{o.case}</p>
+                              )}
+                              <label class="opt">
+                                <input type="radio" name={c.code} value={oi} />
+                                <span>
+                                  {o.text}
+                                  {o.star && (
+                                    <span class="chip ml-2 bg-accent-soft text-accent" title={`Mức tối thiểu để đạt ${o.star} sao`}>
+                                      {markerLabel[o.star]}
+                                    </span>
+                                  )}
+                                </span>
+                                <span class="font-bold text-ink-soft tabular-nums">{o.points}đ</span>
+                              </label>
+                            </>
+                          ))}
+                        </div>
+                      </fieldset>
+                    </>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </section>
+        ))
+      }
+      {
+        sheet.footerNotes.length > 0 && (
+          <div class="text-[14px] text-ink-soft">
+            {sheet.footerNotes.map((n) => (
+              <p class="m-0 mt-1 italic">{n}</p>
+            ))}
+          </div>
+        )
+      }
+    </form>
+
+    <aside class="lg:sticky lg:top-20" aria-label="Kết quả">
+      <div class="card p-5 bg-bg" id="result">
+        <p class="m-0 text-[13px] uppercase tracking-[0.08em] text-muted font-bold">Kết quả tự chấm</p>
+        <p class="m-0 mt-2 flex items-baseline gap-2">
+          <span class="text-[48px] font-bold leading-none tabular-nums" data-total>0</span>
+          <span class="text-muted">/100 điểm</span>
+        </p>
+        <p class="m-0 mt-3 text-[22px] font-bold" data-star aria-live="polite">Chưa chọn tiêu chí nào</p>
+        <p class="m-0 mt-1 text-[15px] text-ink-soft" data-star-note></p>
+        <dl class="mt-4 grid grid-cols-3 gap-2 text-center m-0">
+          {
+            sheet.parts.map((p) => (
+              <div class="rounded-[8px] bg-bg-warm py-2">
+                <dt class="text-[12px] text-muted font-bold">Phần {p.code}</dt>
+                <dd class="m-0 font-bold tabular-nums">
+                  <span data-part-score={p.code}>0</span>/{p.max}
+                </dd>
+              </div>
+            ))
+          }
+        </dl>
+        <p class="m-0 mt-3 text-[14px] text-muted">
+          Đã chọn <span data-answered>0</span>/{total} tiêu chí
+        </p>
+
+        <div class="mt-5 border-t border-line pt-4">
+          <p class="m-0 font-bold">Muốn đạt</p>
+          <div class="mt-2 flex gap-2" role="group" aria-label="Hạng sao mục tiêu">
+            {
+              [3, 4, 5].map((s) => (
+                <button type="button" class="btn btn-ghost flex-1 justify-center px-2" data-target={s} aria-pressed="false">
+                  {s} sao
+                </button>
+              ))
+            }
+          </div>
+          <div class="mt-4 grid gap-3 text-[15px]" data-gaps></div>
+        </div>
+
+        <div class="no-print mt-5 flex flex-wrap gap-2">
+          <button type="button" class="btn btn-primary" data-print>In / lưu PDF</button>
+          <button type="button" class="btn btn-ghost" data-copy>Sao chép link</button>
+          <button type="button" class="btn btn-ghost" data-reset>Xoá hết</button>
+        </div>
+        <p class="m-0 mt-2 text-[13px] text-muted" data-copy-status aria-live="polite"></p>
+      </div>
+
+      <div class="no-print card mt-4 p-5 bg-bg-warm border-line">
+        <p class="m-0 font-bold">Cần phần mềm để lên hạng?</p>
+        <p class="m-0 mt-1 text-[15px] text-ink-soft">
+          Quản lý phân phối có ứng dụng công nghệ thông tin, mã truy xuất nguồn gốc điện tử, website bán hàng: đây là việc HC
+          Labs làm hằng ngày cho HTX nông sản.
+        </p>
+        <a class="btn btn-primary mt-3" href={contact.zaloOaUrl} rel="noopener">Nhắn Zalo HC Labs</a>
+      </div>
+    </aside>
+  </div>
+
+  <a
+    href="#result"
+    class="no-print lg:hidden fixed inset-x-0 bottom-0 z-40 flex items-center justify-between gap-3 border-t border-line-strong bg-bg px-5 py-3 no-underline text-ink shadow-[0_-4px_16px_rgb(26_29_36/0.08)]"
+  >
+    <span class="font-bold tabular-nums"><span data-total>0</span>/100 điểm · <span data-star-short>chưa chọn</span></span>
+    <span class="text-accent font-bold">Xem kết quả ↓</span>
+  </a>
+
+  <section class="print-only page mt-6">
+    <h2 class="text-[16px] font-bold">Các mức đã chọn</h2>
+    <ol data-print-list class="text-[12px]"></ol>
+    <p class="text-[11px]">
+      Tự chấm trên ocop.hclabs.co theo {source.doc}. Không phải kết quả của Hội đồng đánh giá, phân hạng sản phẩm OCOP.
+    </p>
+  </section>
+
+  <script type="application/json" id="sheet-data" set:html={JSON.stringify(sheet).replace(/</g, "\\u003c")} />
+  <script src="../../scripts/score-page.ts"></script>
+</Base>

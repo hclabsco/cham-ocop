@@ -1,0 +1,33 @@
+---
+// Server-renders the round known at build time; the script recomputes it on the visitor's
+// own day so a cached page never shows a stale deadline.
+import { nextRound } from "../lib/calendar";
+import { formatDate, todayInVietnam } from "../lib/format";
+
+const round = nextRound(todayInVietnam());
+---
+
+<div class="card bg-accent-soft border-accent/30 p-4 sm:p-5" data-round-banner>
+  <p class="m-0 font-bold text-ink">
+    <span data-round-title>Đợt {round.round} năm {round.year}</span>: hồ sơ phải được UBND xã đề nghị lên tỉnh trước
+    <span data-round-deadline>{formatDate(round.communeProposalBefore)}</span><span data-round-left></span>.
+  </p>
+  <p class="m-0 mt-1 text-[15px] text-ink-soft">
+    UBND xã có tối đa 15 ngày làm việc để xem hồ sơ, nên nộp cho xã càng sớm càng tốt. Tỉnh đánh giá xong trước
+    <span data-round-result>{formatDate(round.provinceResultBefore)}</span> (Điều 5 khoản 1, QĐ 26/2026/QĐ-TTg).
+  </p>
+</div>
+
+<script>
+  import { daysBetween, nextRound } from "../lib/calendar";
+  import { formatDate, todayInVietnam } from "../lib/format";
+
+  const today = todayInVietnam();
+  const round = nextRound(today);
+  for (const el of document.querySelectorAll<HTMLElement>("[data-round-banner]")) {
+    el.querySelector("[data-round-title]")!.textContent = `Đợt ${round.round} năm ${round.year}`;
+    el.querySelector("[data-round-deadline]")!.textContent = formatDate(round.communeProposalBefore);
+    el.querySelector("[data-round-result]")!.textContent = formatDate(round.provinceResultBefore);
+    el.querySelector("[data-round-left]")!.textContent = ` (còn ${daysBetween(today, round.communeProposalBefore)} ngày)`;
+  }
+</script>

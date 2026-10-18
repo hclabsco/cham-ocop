@@ -1,0 +1,392 @@
+{
+  "entries": [
+    {
+      "set": 1,
+      "where": "3.1 opt2 text",
+      "pdfPage": 19,
+      "verdict": "b",
+      "printed": "Công ty TNHH; hoặc doanh nghiệp tư nhân; hoặc công ty cổ phần có vốn góp của cộng đồng người địa phương <51%"
+    },
+    {
+      "set": 4,
+      "where": "1.2 opt1 points",
+      "pdfPage": 33,
+      "verdict": "b",
+      "printed": null,
+      "comment": "points cell printed blank (zoomed at 400 dpi); option text 'Không được cấp giấy chứng nhận chất lượng'"
+    },
+    {
+      "set": 4,
+      "where": "1.4 title",
+      "pdfPage": 33,
+      "verdict": "a",
+      "printed": "Năng lực sản xuất để đáp ứng yêu cầu phân phối"
+    },
+    {
+      "set": 4,
+      "where": "6.4 opt2 text",
+      "pdfPage": 36,
+      "verdict": "b",
+      "printed": "Có mùi vị/lạ, nhưng chấp nhận được"
+    },
+    {
+      "set": 6,
+      "where": "7 notes",
+      "pdfPage": 47,
+      "verdict": "b",
+      "printed": [
+        "(Chất lượng: Có nét riêng, khác biệt, có dấu hiệu nhận biết rõ ràng so với sản phẩm khác, tiềm năng thành thương hiệu của địa phương)"
+      ]
+    },
+    {
+      "set": 7,
+      "where": "7 notes",
+      "pdfPage": 52,
+      "verdict": "b",
+      "printed": [
+        "(Chất lượng: Có nét riêng, khác biệt, có dấu hiệu nhận biết rõ ràng so với sản phẩm khác, tiềm năng thành thương hiệu của địa phương)"
+      ]
+    },
+    {
+      "set": 8,
+      "where": "7 notes",
+      "pdfPage": 57,
+      "verdict": "b",
+      "printed": [
+        "(Chất lượng: Có nét riêng, khác biệt, có dấu hiệu nhận biết rõ ràng so với sản phẩm khác, tiềm năng thành thương hiệu của địa phương)"
+      ]
+    },
+    {
+      "set": 9,
+      "where": "7 notes",
+      "pdfPage": 61,
+      "verdict": "b",
+      "printed": [
+        "(Chất lượng: Có nét riêng, khác biệt, có dấu hiệu nhận biết rõ ràng so với sản phẩm khác, tiềm năng thành thương hiệu của địa phương)"
+      ]
+    },
+    {
+      "set": 10,
+      "where": "7 notes",
+      "pdfPage": 67,
+      "verdict": "b",
+      "printed": [
+        "(Chất lượng: Có nét riêng, khác biệt, có dấu hiệu nhận biết rõ ràng so với sản phẩm khác, tiềm năng thành thương hiệu của địa phương)"
+      ]
+    },
+    {
+      "set": 9,
+      "where": "6.1 notes",
+      "pdfPage": 61,
+      "verdict": "a",
+      "printed": [
+        "Chú ý: Nếu có các tạp chất không chấp nhận được (các tạp chất có nguy cơ gây mất an toàn thực phẩm) như: Lông, côn trùng, mẫu gỗ, cát, nhựa ... sẽ không đánh giá các bước tiếp theo"
+      ],
+      "comment": "'mẫu' printed with tilde (ẫ), checked at 800 dpi"
+    },
+    {
+      "set": 10,
+      "where": "6.1 notes",
+      "pdfPage": 66,
+      "verdict": "a",
+      "printed": [
+        "Chú ý: Nếu có các tạp chất không chấp nhận được (các tạp chất có nguy cơ gây mất an toàn thực phẩm) như: Lông, côn trùng, mẫu gỗ, cát, nhựa ... sẽ không đánh giá các bước tiếp theo"
+      ],
+      "comment": "'mẫu' printed with tilde (ẫ), checked at 800 dpi"
+    },
+    {
+      "set": 11,
+      "where": "disqualifiedWhen",
+      "pdfPage": 68,
+      "verdict": "neither",
+      "printed": "Giả mạo hồ sơ hoặc không tuân thủ đầy đủ các quy định về giấy chứng nhận cơ sở đủ điều kiện an toàn thực phâ theo quy định; hoặc không đáp ứng về Hồ sơ đăng ký theo quy định",
+      "comment": "scan shows 'phâ' (â with circumflex, no hook, no m) — a typo in the source; checked at 800 dpi"
+    },
+    {
+      "set": 11,
+      "where": "1.3 opt4 text",
+      "pdfPage": 68,
+      "verdict": "b",
+      "printed": "Chế biến sâu từ vùng nguyên liệu địa phương (tạo ra sản phẩm chất lượng cao theo nhu cầu của thị trường)"
+    },
+    {
+      "set": 11,
+      "where": "2.1 opt4 text",
+      "pdfPage": 69,
+      "verdict": "b",
+      "printed": "Sản phẩm là đặc sản, truyền thống, chỉ sản xuất trên địa bàn của xã, có chất lượng đặc sắc, thương mại gắn với chỉ dẫn nguồn gốc địa lý hoặc sản phẩm mới được chế biến từ nguyên liệu đặc trưng của địa phương, được thương mại ổn định ít nhất 36 tháng"
+    },
+    {
+      "set": 12,
+      "where": "1.3 opt4 text",
+      "pdfPage": 73,
+      "verdict": "b",
+      "printed": "Chế biến sâu từ vùng nguyên liệu địa phương (tạo ra sản phẩm chất lượng cao theo nhu cầu của thị trường)"
+    },
+    {
+      "set": 12,
+      "where": "2.1 opt4 text",
+      "pdfPage": 74,
+      "verdict": "b",
+      "printed": "Sản phẩm là đặc sản, truyền thống, chỉ sản xuất trên địa bàn của xã, có chất lượng đặc sắc, thương mại gắn với chỉ dẫn nguồn gốc địa lý hoặc sản phẩm mới được chế biến từ nguyên liệu đặc trưng của địa phương, được thương mại ổn định ít nhất 36 tháng"
+    },
+    {
+      "set": 13,
+      "where": "1.3 opt4 text",
+      "pdfPage": 78,
+      "verdict": "b",
+      "printed": "Chế biến sâu từ vùng nguyên liệu địa phương (tạo ra sản phẩm chất lượng cao theo nhu cầu của thị trường)"
+    },
+    {
+      "set": 13,
+      "where": "2.1 opt4 text",
+      "pdfPage": 79,
+      "verdict": "b",
+      "printed": "Sản phẩm là đặc sản, truyền thống, chỉ sản xuất trên địa bàn của xã, có chất lượng đặc sắc, thương mại gắn với chỉ dẫn nguồn gốc địa lý hoặc sản phẩm mới được chế biến từ nguyên liệu đặc trưng của địa phương, được thương mại ổn định ít nhất 36 tháng"
+    },
+    {
+      "set": 11,
+      "where": "6.1.1 notes",
+      "pdfPage": 71,
+      "verdict": "a",
+      "printed": [
+        "6.1. Ngoại hình (4)",
+        "Chú ý: Nếu có các tạp chất không chấp nhận được (các tạp chất có nguy cơ gây mất an toàn thực phẩm) như: Lông, côn trùng, mẫu gỗ, cát, nhựa ... sẽ không đánh giá các bước tiếp theo"
+      ],
+      "comment": "structure only; wording identical. '6.1. Ngoại hình' is its own bold row with 4 in the score column, directly above the '6.1.1. Tạp chất' row; the 'Chú ý: ...' note row sits after the 6.1.1 options"
+    },
+    {
+      "set": 11,
+      "where": "6.2.1 notes",
+      "pdfPage": 71,
+      "verdict": "a",
+      "printed": [
+        "6.2 Nước pha (11)"
+      ],
+      "comment": "structure only. '6.2 Nước pha' (no dot after 6.2) is its own bold row with 11 in the score column, directly above '6.2.1 Màu nước'"
+    },
+    {
+      "set": 13,
+      "where": "6.1.1 notes",
+      "pdfPage": 81,
+      "verdict": "a",
+      "printed": [
+        "6.1. Ngoại hình (10)",
+        "Ghi chú: Nếu có tạp chất lạ có nguy cơ gây mất AN TOÀN THỰC PHẨM như đất, côn trùng, lông, len ... sẽ không đánh giá các bước tiếp theo."
+      ],
+      "comment": "structure only; wording identical. '6.1. Ngoại hình' is its own bold row with 10 in the score column, above '6.1.1 Tạp chất lạ'; the 'Ghi chú: ...' row sits after the 6.1.1 options"
+    },
+    {
+      "set": 13,
+      "where": "6.2.1 notes",
+      "pdfPage": 81,
+      "verdict": "a",
+      "printed": [
+        "6.2 Nước pha (5)"
+      ],
+      "comment": "structure only. '6.2 Nước pha' is its own bold row with 5 in the score column, above '6.2.1 Màu nước'"
+    },
+    {
+      "set": 13,
+      "where": "6.2.2 opt3 text",
+      "pdfPage": 82,
+      "verdict": "b",
+      "printed": "Mùi vị hấp dẫn, đặc sắc"
+    },
+    {
+      "set": 14,
+      "where": "2.1 opt4 text",
+      "pdfPage": 84,
+      "verdict": "b",
+      "printed": "Sản phẩm là đặc sản, truyền thống, chỉ sản xuất trên địa bàn của xã, có chất lượng đặc sắc, thương mại gắn với chỉ dẫn nguồn gốc địa lý"
+    },
+    {
+      "set": 15,
+      "where": "6.4 opt3 text",
+      "pdfPage": 91,
+      "verdict": "b",
+      "printed": "Vị đậm, phù hợp (với đặc trưng nguyên liệu sử dụng, loại sản phẩm)",
+      "comment": "opt3 (2 points); 'Vị đậm, dịu, phù hợp, không sốc****' is opt4"
+    },
+    {
+      "set": 18,
+      "where": "1.7 opt2 text",
+      "pdfPage": 104,
+      "verdict": "b",
+      "printed": "Có áp dụng công nghệ theo hướng bền vững môi trường (công nghệ tiết kiệm nguyên liệu, nhiên liệu; hoạt động xử lý/tái chế chất thải; tận thu tái sử dụng, tái chế phụ phẩm nông nghiệp,...)",
+      "comment": "no hyphen; faint scan specks between 'thu' and 'tái' and between 'tái' and 'chế' (checked at 1000 dpi)"
+    },
+    {
+      "set": 23,
+      "where": "6.3 title",
+      "pdfPage": 131,
+      "verdict": "b",
+      "printed": "Thiết kế sản phẩm (bao gói, chậu trồng,...)",
+      "comment": "parenthetical is italic, non-bold, on the same row as the bold title (same layout as the inline '(Việt - Anh ...)' in 2.4)"
+    },
+    {
+      "set": 23,
+      "where": "6.3 notes",
+      "pdfPage": 131,
+      "verdict": "b",
+      "printed": [],
+      "comment": "parenthetical sits inline in the title row, not in a separate note row"
+    },
+    {
+      "set": 24,
+      "where": "1.5 opt3 text",
+      "pdfPage": 133,
+      "verdict": "b",
+      "printed": "Có Hồ sơ, thủ tục về môi trường theo quy định của pháp luật về bảo vệ môi trường; hồ sơ minh chứng về công trình thu gom và xử lý chất thải theo quy định và hồ sơ minh chứng về sử dụng bao gói thân thiện với môi trường"
+    },
+    {
+      "set": 24,
+      "where": "2.2 title",
+      "pdfPage": 134,
+      "verdict": "b",
+      "printed": "Phong cách, ghi nhãn sản phẩm (tem, nhãn gắn trên sản phẩm)",
+      "comment": "parenthetical italic, inline in the title row"
+    },
+    {
+      "set": 24,
+      "where": "2.2 notes",
+      "pdfPage": 134,
+      "verdict": "b",
+      "printed": [],
+      "comment": "parenthetical inline in the title row"
+    },
+    {
+      "set": 24,
+      "where": "6.4 title",
+      "pdfPage": 136,
+      "verdict": "b",
+      "printed": "Thiết kế sản phẩm (chậu trồng, phụ kiện kèm theo...)",
+      "comment": "parenthetical italic, inline in the title row"
+    },
+    {
+      "set": 24,
+      "where": "6.4 notes",
+      "pdfPage": 136,
+      "verdict": "b",
+      "printed": [],
+      "comment": "parenthetical inline in the title row"
+    },
+    {
+      "set": 25,
+      "where": "1.5 opt3 text",
+      "pdfPage": 138,
+      "verdict": "b",
+      "printed": "Có Hồ sơ, thủ tục về môi trường theo quy định của pháp luật về bảo vệ môi trường; hồ sơ minh chứng về công trình thu gom và xử lý chất thải theo quy định và hồ sơ minh chứng về sử dụng bao gói thân thiện với môi trường"
+    },
+    {
+      "set": 25,
+      "where": "2.2 title",
+      "pdfPage": 139,
+      "verdict": "b",
+      "printed": "Phong cách, ghi nhãn sản phẩm (tem, nhãn gắn trên sản phẩm)",
+      "comment": "parenthetical italic, inline in the title row"
+    },
+    {
+      "set": 25,
+      "where": "2.2 notes",
+      "pdfPage": 139,
+      "verdict": "b",
+      "printed": [],
+      "comment": "parenthetical inline in the title row"
+    },
+    {
+      "set": 26,
+      "where": "2.1 opt2 text",
+      "pdfPage": 142,
+      "verdict": "b",
+      "printed": "Phát triển dựa trên ý tưởng của mình, không trùng lắp với các sản phẩm du lịch khác"
+    },
+    {
+      "set": 26,
+      "where": "5.1 opt3 text",
+      "pdfPage": 144,
+      "verdict": "b",
+      "printed": "Có Cẩm nang hoặc câu chuyện liên quan đến sản phẩm dịch vụ du lịch có tính riêng, đặc sắc, thể hiện trí tuệ bản sắc địa phương và được thể hiện bằng tiếng nước ngoài phù hợp"
+    },
+    {
+      "set": 26,
+      "where": "8 notes",
+      "pdfPage": 145,
+      "verdict": "b",
+      "printed": [
+        "Lựa chọn một trong hai trường hợp sau:",
+        "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp",
+        "b. Trường hợp 2: Điểm dịch vụ du lịch"
+      ],
+      "comment": "structure: 'Lựa chọn một trong hai trường hợp sau:' is an italic row under the title; 'a. Trường hợp 1: ...' is a plain row before options 1-2; 'b. Trường hợp 2: Điểm dịch vụ du lịch' is a plain row before options 3-4"
+    },
+    {
+      "set": 26,
+      "where": "9 notes",
+      "pdfPage": 145,
+      "verdict": "b",
+      "printed": [
+        "Lựa chọn một trong hai trường hợp sau:",
+        "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp",
+        "b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp"
+      ],
+      "comment": "structure: italic 'Lựa chọn ...' row, then 'a. Trường hợp 1: ...' row before options 1-2, 'b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp' row before options 3-4"
+    },
+    {
+      "set": 26,
+      "where": "15 notes",
+      "pdfPage": 146,
+      "verdict": "b",
+      "printed": [
+        "Lựa chọn một trong hai trường hợp sau:",
+        "a. Trường hợp 1: Dịch vụ du lịch do cộng đồng cung cấp",
+        "b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp"
+      ],
+      "comment": "structure: italic 'Lựa chọn ...' row, then 'a. Trường hợp 1: ...' row before options 1-2, 'b. Trường hợp 2: Dịch vụ du lịch do tổ chức, cá nhân cung cấp' row before options 3-4"
+    },
+    {
+      "set": 26,
+      "where": "16 opt1 text",
+      "pdfPage": 146,
+      "verdict": "b",
+      "printed": "Có cung cấp, tổ chức hoạt động trình diễn lễ, hội, văn hóa tại điểm dịch vụ du lịch"
+    }
+  ],
+  "checks": [
+    {
+      "id": 1,
+      "pdfPage": 139,
+      "finding": "Set 25, 2.2 opt3 'Thông tin/thuyết minh đầy đủ, ấn tượng, thể hiện được thông điệp câu chuyện sản phẩm (hình ảnh hoặc lời giới thiệu), có mã truy xuất nguồn gốc điện tử****' ends with 4 asterisks (star 4), checked at 400 dpi. The matching option in set 24 (p134) has 5 asterisks (*****), so the sets differ in the source."
+    },
+    {
+      "id": 2,
+      "pdfPage": 43,
+      "finding": "Set 6, 1.1: only opt2 'Sử dụng nguyên liệu có nguồn gốc trong tỉnh từ 50% đến dưới 75%***' (2 points) carries ***. opt1 (dưới 50%, 1 point) and opt3 (75% đến 100%, 3 points) have no asterisks."
+    },
+    {
+      "id": 3,
+      "pdfPage": 109,
+      "finding": "Confirmed. Set 19, 2.3 'Phong cách, ghi nhãn hàng hóa' (max 3), opt1 reads 'Đơn đăng ký nhãn hiệu đã được cơ quan có thẩm quyền chấp nhận hoặc công bố (đã qua vòng thẩm định hình thức)***', 1 point. This is the 3.5 trademark wording, printed under 2.3, which looks like a drafting error in the source. Other sets have 'Có nhãn, ghi nhãn hàng hóa đầy đủ, theo đúng quy định***' here. opt2 and opt3 are the normal labeling texts (2 and 3 points)."
+    },
+    {
+      "id": 4,
+      "pdfPage": 142,
+      "finding": "Set 26 header reads 'Phần A' (no colon) / 'SẢN PHẨM VÀ SỨC MẠNH CỘNG ĐỒNG (35 Điểm)' (no 'CỦA'). The score column shows 40. Phần B shows (25 Điểm)/25 and Phần C (35 Điểm)/35. Section maxima 14+12+14 = 40, so the '(35 Điểm)' header text is the inconsistent value."
+    },
+    {
+      "id": 5,
+      "pdfPage": 33,
+      "finding": "Blank in all four sets. Set 4 p33 (zoomed at 400 dpi), set 7 p48, set 10 p63 and set 11 p68: the 'Không được cấp giấy chứng nhận chất lượng' points cell is empty. For comparison, sets 6 (p43), 12 (p73) and 13 (p78) print 0."
+    },
+    {
+      "id": 6,
+      "pdfPage": 96,
+      "finding": "Verbatim (italic, one full-width row after the 6.4 Vị options and before '7. TÍNH ĐỘC ĐÁO'): 'Ghi chú: Nếu được 0 điểm tại một trong các chỉ tiêu trên, sẽ không đánh giá các bước tiếp theo.'"
+    },
+    {
+      "id": 7,
+      "pdfPage": 68,
+      "finding": "Set 11 (pp68-72) has 23 starred options (code, option index, stars): 1.1#2 ***; 1.5#3 ****; 1.5#4 *****; 1.6#1 ****; 2.1#4 ****; 2.2#3 ***; 2.3#1 ***; 2.3#3 ****; 3.4#2 ****; 3.5#1 ***; 3.5#2 ****; 4.1#2 ***; 4.1#3 ****; 4.1#4 *****; 5.1#5 ****; 5.3#2 ***; 6.1.1#3 ****; 6.1.2#3 ****; 7#3 ****; 7#4 *****; 8#1 ***; 9#1 ***; 9#2 ****. By page: p68 4, p69 4, p70 6, p71 4, p72 5. No stars in 1.2, 1.3, 1.4, 1.7, 2.4, 3.1-3.3, 4.2, 4.3, 5.2, 6.2.x, 10, 11. My count matches both transcriptions exactly."
+    }
+  ]
+}

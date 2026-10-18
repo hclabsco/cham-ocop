@@ -1,0 +1,56 @@
+---
+import Base from "../layouts/Base.astro";
+import RoundBanner from "../components/RoundBanner.astro";
+import { source } from "../data/site";
+---
+
+<Base
+  title="Hạn giấy chứng nhận OCOP: khi nào hết hạn, khi nào nộp đánh giá lại · Chấm OCOP"
+  description="Nhập ngày cấp giấy chứng nhận OCOP, biết ngày hết hạn 36 tháng và khoảng thời gian phải nộp hồ sơ đánh giá lại (180 đến 120 ngày trước hạn) theo Quyết định 26/2026/QĐ-TTg."
+>
+  <section class="page pt-12 max-w-[860px]">
+    <h1 class="h1 m-0">Giấy chứng nhận OCOP của anh chị hết hạn ngày nào?</h1>
+    <p class="lede mt-5">
+      Giấy chứng nhận 3, 4, 5 sao có giá trị 36 tháng kể từ ngày cơ quan có thẩm quyền ban hành. Muốn giữ hạng, chủ thể phải
+      nộp hồ sơ đánh giá lại không sớm hơn 180 ngày và không muộn hơn 120 ngày trước ngày hết hạn.
+    </p>
+
+    <form id="renewal-form" class="card mt-8 p-5 sm:p-6 grid gap-4" novalidate>
+      <label for="issued" class="font-bold">Ngày ban hành quyết định công nhận (ghi trên giấy chứng nhận)</label>
+      <div class="flex flex-wrap gap-3">
+        <input
+          id="issued"
+          name="issued"
+          type="date"
+          required
+          min="2015-01-01"
+          class="min-h-[44px] rounded-[8px] border border-line-strong px-3 text-[16px]"
+        />
+        <button type="submit" class="btn btn-primary">Tính ngày</button>
+      </div>
+      <p class="m-0 text-[14px] text-muted">Ví dụ: giấy cấp ngày 15/11/2023 hết hạn ngày 15/11/2026.</p>
+      <div data-renewal-result aria-live="polite" class="grid gap-3"></div>
+    </form>
+
+    <div class="mt-8 grid gap-4 text-ink-soft">
+      <p class="m-0">
+        <strong class="text-ink">Cách tính.</strong> Hạn 36 tháng kết thúc vào ngày tương ứng của tháng cuối; tháng đó không có
+        ngày tương ứng (ví dụ 29/02) thì lấy ngày cuối tháng. Khoảng nộp hồ sơ tính lùi 180 và 120 ngày lịch từ ngày hết hạn.
+      </p>
+      <p class="m-0">
+        <strong class="text-ink">Lỡ khoảng nộp?</strong> Điều 12 khoản 3 (điều khoản chuyển tiếp) viết: sản phẩm thuộc đối
+        tượng đánh giá lại nhưng thời gian nộp hồ sơ không đáp ứng thời hạn tại điểm a khoản 6 Điều 7 thì giấy chứng nhận
+        tiếp tục có hiệu lực đến ngày có kết quả xử lý của cơ quan có thẩm quyền, nhưng không quá 180 ngày tính từ ngày hết
+        thời hạn. Anh chị nên hỏi cơ quan tham mưu quản lý OCOP của tỉnh trường hợp cụ thể của mình.
+      </p>
+      <p class="m-0">
+        <strong class="text-ink">Giấy cấp trước 22/5/2026</strong> vẫn có giá trị đến hết thời hạn ghi trong quyết định công nhận
+        (Điều 12 khoản 1).
+      </p>
+      <p class="m-0 text-[14px]">Căn cứ: Điều 4 khoản 3, Điều 7 khoản 6, Điều 12, {source.doc}.</p>
+    </div>
+
+    <div class="mt-10"><RoundBanner /></div>
+  </section>
+  <script src="../scripts/renewal-page.ts"></script>
+</Base>

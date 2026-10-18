@@ -1,0 +1,34 @@
+---
+import { contact, source, verifiedThrough } from "../data/site";
+import { formatDate } from "../lib/format";
+---
+
+<footer class="no-print mt-20 border-t border-line bg-bg-warm">
+  <div class="page py-10 grid gap-8 md:grid-cols-[1.4fr_1fr]">
+    <div>
+      <img src="/brand/logo-light.svg" alt="HC Labs" width="132" height="32" />
+      <p class="mt-4 max-w-[52ch] text-ink-soft">
+        Chấm OCOP là công cụ miễn phí của HC Labs. Chúng tôi làm phần mềm vận hành cho HTX và doanh nghiệp nông
+        sản, đang chạy thật ở HTX Chè Hảo Đạt, Tân Cương, từ 07/2026.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a class="btn btn-primary" href={contact.zaloOaUrl} rel="noopener">Nhắn Zalo HC Labs</a>
+        <a class="btn btn-ghost" href={contact.phoneHref}>Gọi {contact.phoneDisplay}</a>
+      </div>
+    </div>
+    <div class="text-[14px] text-ink-soft">
+      <p class="m-0">
+        Tính theo <a href="/nguon/">{source.doc}</a>. Đã đối chiếu văn bản đến ngày {formatDate(verifiedThrough)}.
+      </p>
+      <p class="mt-3">
+        Đây không phải công cụ của cơ quan nhà nước. Điểm ở đây là tự ước tính; kết quả chính thức do Hội đồng đánh giá,
+        phân hạng sản phẩm OCOP cấp tỉnh hoặc trung ương quyết định.
+      </p>
+      <p class="mt-3">
+        Mã nguồn mở: <a href={contact.repo} rel="noopener">github.com/hclabsco/cham-ocop</a>. Thấy chỗ nào sai so với văn
+        bản, anh chị nhắn Zalo hoặc mở issue, chúng tôi sửa.
+      </p>
+      <p class="mt-3">© 2026 Công ty TNHH HC Labs · MST 0111487156</p>
+    </div>
+  </div>
+</footer>

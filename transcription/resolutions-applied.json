@@ -1,0 +1,66 @@
+[
+ {
+  "set": 4,
+  "where": "1.4 title",
+  "printed": "Năng lực sản xuất để đáp ứng yêu cầu phân phối"
+ },
+ {
+  "set": 9,
+  "where": "6.1 notes",
+  "printed": [
+   "Chú ý: Nếu có các tạp chất không chấp nhận được (các tạp chất có nguy cơ gây mất an toàn thực phẩm) như: Lông, côn trùng, mẫu gỗ, cát, nhựa ... sẽ không đánh giá các bước tiếp theo"
+  ]
+ },
+ {
+  "set": 10,
+  "where": "6.1 notes",
+  "printed": [
+   "Chú ý: Nếu có các tạp chất không chấp nhận được (các tạp chất có nguy cơ gây mất an toàn thực phẩm) như: Lông, côn trùng, mẫu gỗ, cát, nhựa ... sẽ không đánh giá các bước tiếp theo"
+  ]
+ },
+ {
+  "set": 11,
+  "where": "disqualifiedWhen",
+  "printed": "Giả mạo hồ sơ hoặc không tuân thủ đầy đủ các quy định về giấy chứng nhận cơ sở đủ điều kiện an toàn thực phâ theo quy định; hoặc không đáp ứng về Hồ sơ đăng ký theo quy định"
+ },
+ {
+  "set": 4,
+  "where": "1.2 opt1 points",
+  "printed": "0"
+ },
+ {
+  "set": 4,
+  "where": "1.2 notes+",
+  "printed": "Ô điểm của mức “Không được cấp giấy chứng nhận chất lượng” để trống trong bản in (các bộ khác in 0). Công cụ tính mức này 0 điểm."
+ },
+ {
+  "set": 7,
+  "where": "1.2 opt1 points",
+  "printed": "0"
+ },
+ {
+  "set": 7,
+  "where": "1.2 notes+",
+  "printed": "Ô điểm của mức “Không được cấp giấy chứng nhận chất lượng” để trống trong bản in (các bộ khác in 0). Công cụ tính mức này 0 điểm."
+ },
+ {
+  "set": 10,
+  "where": "1.2 opt1 points",
+  "printed": "0"
+ },
+ {
+  "set": 10,
+  "where": "1.2 notes+",
+  "printed": "Ô điểm của mức “Không được cấp giấy chứng nhận chất lượng” để trống trong bản in (các bộ khác in 0). Công cụ tính mức này 0 điểm."
+ },
+ {
+  "set": 11,
+  "where": "1.2 opt1 points",
+  "printed": "0"
+ },
+ {
+  "set": 11,
+  "where": "1.2 notes+",
+  "printed": "Ô điểm của mức “Không được cấp giấy chứng nhận chất lượng” để trống trong bản in (các bộ khác in 0). Công cụ tính mức này 0 điểm."
+ }
+]
