@@ -45,8 +45,8 @@ jobs:
         run: |
           base=https://cham-ocop.ch-nh.workers.dev
           for path in / /cham/che-tuoi-che-che-bien/ /han-giay-chung-nhan/ /nguon/; do
-            code=$(curl -s -o /dev/null -w '%{http_code}' "$base$path")
+            code=$(curl -s --max-time 20 --retry 3 -o /dev/null -w '%{http_code}' "$base$path")
             echo "$path -> $code"
             [ "$code" = 200 ]
           done
-          curl -s "$base/cham/che-tuoi-che-che-bien/" | grep -q 'Chè tươi, chè chế biến'
+          curl -s --max-time 20 --retry 3 "$base/cham/che-tuoi-che-che-bien/" | grep -q 'Chè tươi, chè chế biến'

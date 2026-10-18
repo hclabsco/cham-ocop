@@ -7,13 +7,17 @@ import { join } from "node:path";
 const DIST = process.env.BUILD_DIR
   ? process.env.BUILD_DIR.replace(/\/?$/, "/")
   : new URL("../dist/", import.meta.url).pathname;
+const EXT = String.raw`["']?(https?:)?\/\/`;
 const RESOURCE = [
-  /<script[^>]+src=["'](https?:)?\/\//gi,
-  /<link[^>]+href=["'](https?:)?\/\/[^"']+["'][^>]*rel=["']?(stylesheet|preload|modulepreload|icon)/gi,
-  /<link[^>]+rel=["']?(stylesheet|preload|modulepreload|icon)["']?[^>]+href=["'](https?:)?\/\//gi,
-  /<(img|iframe|source|video|audio)[^>]+src=["'](https?:)?\/\//gi,
-  /url\(\s*["']?(https?:)?\/\//gi,
-  /@import\s+["']?(https?:)?\/\//gi,
+  new RegExp(String.raw`<script[^>]+src=${EXT}`, "gi"),
+  // Any <link> pointing off-site loads or warms something (stylesheet, icon, preconnect, manifest…).
+  new RegExp(String.raw`<link(?![^>]*rel=["']?(canonical|alternate)\b)[^>]+href=${EXT}`, "gi"),
+  new RegExp(String.raw`<(img|iframe|source|video|audio|track|embed)[^>]+(src|srcset|poster)=${EXT}`, "gi"),
+  new RegExp(String.raw`<object[^>]+data=${EXT}`, "gi"),
+  new RegExp(String.raw`url\(\s*${EXT}`, "gi"),
+  new RegExp(String.raw`@import\s+(url\()?${EXT}`, "gi"),
+  new RegExp(String.raw`\b(fetch|import|importScripts|sendBeacon)\(\s*["'\x60](https?:)?\/\/`, "gi"),
+  /new\s+(WebSocket|EventSource)\(/gi,
 ];
 const MAX_PAGE_BYTES = 200 * 1024;
 

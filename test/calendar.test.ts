@@ -24,6 +24,13 @@ describe("renewalWindow", () => {
   test("ngày sai định dạng thì báo lỗi", () => {
     expect(() => renewalWindow("15/11/2023")).toThrow(/YYYY-MM-DD/);
   });
+
+  test("tháng 13, tháng 00, ngày 31/04 hay năm hai chữ số bị từ chối, không tự lăn sang ngày khác", () => {
+    expect(() => renewalWindow("2026-13-01")).toThrow();
+    expect(() => renewalWindow("2026-00-10")).toThrow();
+    expect(() => renewalWindow("2026-04-31")).toThrow();
+    expect(() => renewalWindow("0026-01-15")).toThrow();
+  });
 });
 
 // Điều 5 khoản 1: đợt 1 xã đề nghị trước 30/4, tỉnh đánh giá trước 30/6;
@@ -34,6 +41,7 @@ describe("nextRound", () => {
       round: 2,
       year: 2026,
       communeProposalBefore: "2026-10-30",
+      lastProposalDay: "2026-10-29",
       provinceResultBefore: "2026-12-30",
     });
   });
@@ -43,6 +51,7 @@ describe("nextRound", () => {
       round: 1,
       year: 2027,
       communeProposalBefore: "2027-04-30",
+      lastProposalDay: "2027-04-29",
       provinceResultBefore: "2027-06-30",
     });
   });

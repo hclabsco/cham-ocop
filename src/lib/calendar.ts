@@ -8,8 +8,13 @@ const ISO = /^(\d{4})-(\d{2})-(\d{2})$/;
 function parse(date: string): Date {
   const m = ISO.exec(date);
   if (!m) throw new Error(`Ngày phải có dạng YYYY-MM-DD, nhận được "${date}"`);
-  const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
-  if (d.getUTCDate() !== +m[3]) throw new Error(`Ngày không tồn tại: ${date}`);
+  const [year, month, day] = [+m[1], +m[2], +m[3]];
+  if (year < 1900) throw new Error(`Năm không hợp lệ: ${date}`);
+  const d = new Date(Date.UTC(year, month - 1, day));
+  // Date.UTC rolls 2026-13-01 into 2027 and 2026-04-31 into May; refuse instead.
+  if (d.getUTCFullYear() !== year || d.getUTCMonth() !== month - 1 || d.getUTCDate() !== day) {
+    throw new Error(`Ngày không tồn tại: ${date}`);
+  }
   return d;
 }
 
@@ -50,6 +55,8 @@ export interface Round {
   year: number;
   /** UBND cấp xã must propose the dossier before this day. */
   communeProposalBefore: string;
+  /** The last day a proposal still makes this round ("trước 30/10" → 29/10). */
+  lastProposalDay: string;
   /** UBND cấp tỉnh completes the rating before this day. */
   provinceResultBefore: string;
 }
@@ -58,8 +65,8 @@ export interface Round {
 export function nextRound(today: string): Round {
   const year = parse(today).getUTCFullYear();
   const rounds: Round[] = [year, year + 1].flatMap((y) => [
-    { round: 1, year: y, communeProposalBefore: `${y}-04-30`, provinceResultBefore: `${y}-06-30` },
-    { round: 2, year: y, communeProposalBefore: `${y}-10-30`, provinceResultBefore: `${y}-12-30` },
+    { round: 1, year: y, communeProposalBefore: `${y}-04-30`, lastProposalDay: `${y}-04-29`, provinceResultBefore: `${y}-06-30` },
+    { round: 2, year: y, communeProposalBefore: `${y}-10-30`, lastProposalDay: `${y}-10-29`, provinceResultBefore: `${y}-12-30` },
   ]);
   return rounds.find((r) => today < r.communeProposalBefore)!;
 }

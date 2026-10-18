@@ -10,7 +10,7 @@ const round = nextRound(todayInVietnam());
 <div class="card bg-accent-soft border-accent/30 p-4 sm:p-5" data-round-banner>
   <p class="m-0 font-bold text-ink">
     <span data-round-title>Đợt {round.round} năm {round.year}</span>: hồ sơ phải được UBND xã đề nghị lên tỉnh trước
-    <span data-round-deadline>{formatDate(round.communeProposalBefore)}</span><span data-round-left></span>.
+    ngày <span data-round-deadline>{formatDate(round.communeProposalBefore)}</span><span data-round-left></span>.
   </p>
   <p class="m-0 mt-1 text-[15px] text-ink-soft">
     UBND xã có tối đa 15 ngày làm việc để xem hồ sơ, nên nộp cho xã càng sớm càng tốt. Tỉnh đánh giá xong trước
@@ -28,6 +28,8 @@ const round = nextRound(todayInVietnam());
     el.querySelector("[data-round-title]")!.textContent = `Đợt ${round.round} năm ${round.year}`;
     el.querySelector("[data-round-deadline]")!.textContent = formatDate(round.communeProposalBefore);
     el.querySelector("[data-round-result]")!.textContent = formatDate(round.provinceResultBefore);
-    el.querySelector("[data-round-left]")!.textContent = ` (còn ${daysBetween(today, round.communeProposalBefore)} ngày)`;
+    const left = daysBetween(today, round.lastProposalDay);
+    el.querySelector("[data-round-left]")!.textContent =
+      left === 0 ? " (hôm nay là ngày cuối)" : ` (ngày cuối là ${formatDate(round.lastProposalDay)}, còn ${left} ngày)`;
   }
 </script>

@@ -7,6 +7,8 @@ const form = document.getElementById("score-form") as HTMLFormElement;
 const storageKey = `cham-ocop:${sheet.slug}`;
 const criteria = criteriaOf(sheet);
 let target: Star | null = null;
+/** False while showing a shared link, so the visitor's own saved draft is not overwritten. */
+let persist = true;
 
 const $ = <T extends Element>(sel: string) => document.querySelector<T>(sel)!;
 const $$ = (sel: string) => document.querySelectorAll<HTMLElement>(sel);
@@ -63,7 +65,9 @@ function render() {
   } else {
     starEl.textContent = `${starsText(score.star)} ${score.star} sao`;
     if (score.star < score.starByScore) {
-      note.textContent = `Theo điểm là ${score.starByScore} sao, nhưng còn ${score.blockers.length} tiêu chí chưa đạt mức bắt buộc của hạng ${score.starByScore} sao.`;
+      note.textContent =
+        `Theo điểm là ${score.starByScore} sao, nhưng còn ${score.blockers.length} tiêu chí chưa đạt mức bắt buộc của hạng ${score.starByScore} sao.` +
+        (score.star < 3 ? " Hạng 1 sao và 2 sao không được cấp giấy chứng nhận." : "");
     } else if (score.star < 3) {
       note.textContent = "Hạng 1 sao và 2 sao không được cấp giấy chứng nhận.";
     } else {
@@ -78,6 +82,7 @@ function render() {
 
   const encoded = encodeAnswers(sheet, answers);
   history.replaceState(null, "", encoded ? `#a=${encoded}` : location.pathname);
+  if (!persist) return;
   try {
     localStorage.setItem(storageKey, encoded);
   } catch {
@@ -133,7 +138,30 @@ function renderPrintList(answers: Answers) {
   );
 }
 
-form.addEventListener("change", render);
+function userChanged() {
+  persist = true;
+  render();
+}
+
+form.addEventListener("change", userChanged);
+for (const fieldset of form.querySelectorAll<HTMLFieldSetElement>("fieldset[data-code]")) {
+  const clear = fieldset.querySelector<HTMLButtonElement>("[data-clear]")!;
+  clear.addEventListener("click", () => {
+    for (const input of fieldset.querySelectorAll<HTMLInputElement>("input[type=radio]")) input.checked = false;
+    userChanged();
+  });
+}
+// In-page links scroll without replacing "#a=…" in the address bar, so the link stays shareable.
+document.addEventListener("click", (e) => {
+  const a = (e.target as Element).closest<HTMLAnchorElement>('a[href^="#"]');
+  if (!a || a.getAttribute("href") === "#") return;
+  const dest = document.getElementById(decodeURIComponent(a.getAttribute("href")!.slice(1)));
+  if (!dest) return;
+  e.preventDefault();
+  dest.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (!dest.hasAttribute("tabindex")) dest.setAttribute("tabindex", "-1");
+  dest.focus({ preventScroll: true });
+});
 for (const b of $$("[data-target]")) {
   b.addEventListener("click", () => {
     target = Number(b.dataset.target) as Star;
@@ -145,12 +173,15 @@ $("[data-reset]").addEventListener("click", () => {
   if (!confirm("Xoá hết các lựa chọn của phiếu này?")) return;
   writeAnswers({});
   target = null;
-  render();
+  userChanged();
 });
 $("[data-copy]").addEventListener("click", async () => {
   const status = $("[data-copy-status]");
   try {
-    await navigator.clipboard.writeText(location.href);
+    const url = new URL(location.pathname, location.origin);
+    const encoded = encodeAnswers(sheet, readAnswers());
+    if (encoded) url.hash = `a=${encoded}`;
+    await navigator.clipboard.writeText(url.href);
     status.textContent = "Đã sao chép. Gửi link này, người nhận thấy đúng các lựa chọn của anh chị.";
   } catch {
     status.textContent = "Không sao chép được. Anh chị chép địa chỉ trên thanh trình duyệt.";
@@ -165,5 +196,14 @@ try {
 } catch {
   /* storage unavailable */
 }
-writeAnswers(decodeAnswers(sheet, fromHash ?? saved ?? ""));
+const status = $("[data-copy-status]");
+let initial = decodeAnswers(sheet, fromHash ?? saved ?? "");
+if (initial === null) {
+  status.textContent = "Link này được tạo trước khi phiếu chấm được sửa nên không đọc được. Anh chị chấm lại giúp.";
+  initial = fromHash !== null ? (decodeAnswers(sheet, saved ?? "") ?? {}) : {};
+} else if (fromHash !== null && saved && fromHash !== saved) {
+  persist = false;
+  status.textContent = "Đang xem phiếu từ link được gửi. Bản nháp của anh chị trên máy này vẫn giữ, chỉ bị thay khi anh chị sửa phiếu.";
+}
+writeAnswers(initial);
 render();

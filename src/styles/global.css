@@ -153,6 +153,16 @@ button[aria-pressed="true"] {
   height: 1rem;
 }
 
+/* The fixed result bar on narrow screens must not cover the footer or a focused field. */
+@media (max-width: 1023px) {
+  html:has(.mobile-result-bar) {
+    scroll-padding-bottom: 5rem;
+  }
+  body:has(.mobile-result-bar) {
+    padding-bottom: 4rem;
+  }
+}
+
 @media print {
   .no-print {
     display: none !important;

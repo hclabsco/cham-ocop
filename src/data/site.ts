@@ -9,7 +9,7 @@ export const contact = {
   repo: "https://github.com/hclabsco/cham-ocop",
 } as const;
 
-/** The only legal source of the scoring sheets. sha256 is checked by test/sources.test.ts. */
+/** The only legal source of the scoring sheets. sha256 is checked by test/sheets.test.ts. */
 export const source = {
   doc: "Quyết định 26/2026/QĐ-TTg",
   title: "Ban hành Bộ tiêu chí và quy trình đánh giá, phân hạng sản phẩm mỗi xã một sản phẩm",

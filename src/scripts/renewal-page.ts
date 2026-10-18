@@ -29,7 +29,14 @@ function show() {
     out.append(Object.assign(document.createElement("p"), { className: "m-0 text-accent", textContent: "Anh chị chọn ngày ban hành trước." }));
     return;
   }
-  const w = renewalStatus(input.value, todayInVietnam());
+  let w: ReturnType<typeof renewalStatus>;
+  try {
+    if (input.value < "2015-01-01") throw new Error("too early");
+    w = renewalStatus(input.value, todayInVietnam());
+  } catch {
+    out.append(Object.assign(document.createElement("p"), { className: "m-0 text-accent", textContent: "Ngày chưa đúng. Anh chị chọn lại ngày ghi trên giấy chứng nhận (từ năm 2015 trở đi)." }));
+    return;
+  }
   const m = MESSAGES[w.state];
   const banner = Object.assign(document.createElement("p"), { className: `m-0 rounded-[8px] p-3 font-bold ${m.tone}`, textContent: m.text(w.daysLeft) });
   out.append(

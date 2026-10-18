@@ -37,7 +37,7 @@ const markerLabel = { 3: "Bắt buộc 3★", 4: "Bắt buộc 4★", 5: "Bắt 
   </div>
 
   <div class="page mt-8 pb-16 lg:pb-0 grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px] items-start">
-    <form id="score-form" class="grid gap-10" data-slug={sheet.slug} aria-describedby="form-help">
+    <form id="score-form" class="no-print grid gap-10" data-slug={sheet.slug} aria-describedby="form-help">
       <p id="form-help" class="no-print m-0 text-ink-soft">
         Mỗi tiêu chí chọn một mức đúng với cơ sở hiện nay. Chưa chắc thì để trống, tiêu chí đó được tính 0 điểm. Lựa chọn
         được lưu trên trình duyệt của anh chị, không gửi đi đâu.
@@ -81,6 +81,9 @@ const markerLabel = { 3: "Bắt buộc 3★", 4: "Bắt buộc 4★", 5: "Bắt 
                             <span data-crit-score={c.code}>0</span>/{c.max}
                           </span>
                         </div>
+                        <button type="button" data-clear aria-label={`Bỏ chọn tiêu chí ${c.code}`} class="no-print mt-1 text-[13px] text-muted underline bg-transparent border-0 p-0 cursor-pointer">
+                          Bỏ chọn
+                        </button>
                         {c.notes.map((n) => (
                           <p class="m-0 mt-2 text-[14px] italic text-ink-soft">{n}</p>
                         ))}
@@ -185,7 +188,7 @@ const markerLabel = { 3: "Bắt buộc 3★", 4: "Bắt buộc 4★", 5: "Bắt 
 
   <a
     href="#result"
-    class="no-print lg:hidden fixed inset-x-0 bottom-0 z-40 flex items-center justify-between gap-3 border-t border-line-strong bg-bg px-5 py-3 no-underline text-ink shadow-[0_-4px_16px_rgb(26_29_36/0.08)]"
+    class="mobile-result-bar no-print lg:hidden fixed inset-x-0 bottom-0 z-40 flex items-center justify-between gap-3 border-t border-line-strong bg-bg px-5 py-3 no-underline text-ink shadow-[0_-4px_16px_rgb(26_29_36/0.08)]"
   >
     <span class="font-bold tabular-nums"><span data-total>0</span>/100 điểm · <span data-star-short>chưa chọn</span></span>
     <span class="text-accent font-bold">Xem kết quả ↓</span>
