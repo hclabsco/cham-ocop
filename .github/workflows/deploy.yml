@@ -44,8 +44,13 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: |
           base=https://cham-ocop.ch-nh.workers.dev
+          # A new version can take a few seconds to reach every edge: retry non-200 for ~60s.
           for path in / /cham/che-tuoi-che-che-bien/ /han-giay-chung-nhan/ /nguon/; do
-            code=$(curl -s --max-time 20 --retry 3 -o /dev/null -w '%{http_code}' "$base$path")
+            for attempt in 1 2 3 4 5 6; do
+              code=$(curl -s --max-time 20 -o /dev/null -w '%{http_code}' "$base$path")
+              [ "$code" = 200 ] && break
+              sleep 10
+            done
             echo "$path -> $code"
             [ "$code" = 200 ]
           done
